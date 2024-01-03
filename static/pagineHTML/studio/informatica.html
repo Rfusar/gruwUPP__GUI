@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♠Informatica</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        td,
+        th {
+            border: .5px solid white;
+            padding: 5px;
+        }
+
+        a {
+            margin: 0 5px 0 5px;
+            text-decoration: none;
+            color: rgb(255, 255, 105);
+        }
+
+        .video {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            border-bottom: 3px solid white
+        }
+
+        .titoli {
+            font-style: oblique;
+            font-weight: 400;
+        }
+
+        .menu_link {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .ZOOM {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+        }
+
+        /*STELLE DIFFICOLTA*/
+        i {
+            color: rgb(255, 255, 6);
+        }
+    </style>
+</head>
+
+
+<!--
+    CODICI
+        stella nera = &#9733
+        stella bianca = &#9734
+-->
+
+<body id="body" colore="buio">
+    <button id="mybtn" style="margin: 25px;">GIORNO/NOTTE</button>
+    <div style="border: .8px solid rgb(12, 19, 231); height: max-content;padding-bottom: 50px;border-radius: 30px;">
+        <!--BASE-->
+        <div style="display: flex;align-items: center;flex-direction: column;">
+            <h1 style="color: rgb(61, 207, 255);" class="base">BASE</h1>
+            <table>
+                <tr>
+                    <td>Teorie di ...</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/Architettura_di_von_Neumann" target="_blank">-Von Neumann-</a>
+                        <a href="https://it.wikipedia.org/wiki/Macchina_di_Turing" target="_blank">-Alan Turing-</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Macchina</td>
+                    <td class="menu_link">
+                        <a href="https://it.wikipedia.org/wiki/Memoria_(informatica)" target="_blank">-Memoria-</a>
+                        <a href="https://it.wikipedia.org/wiki/Processore" target="_blank">-Processore-</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>OS</td>
+                    <td class="menu_link">
+                        <a href="https://it.wikipedia.org/wiki/Linux" target="_blank">-Linux-</a>
+                        <a href="https://it.wikipedia.org/wiki/Microsoft_Windows" target="_blank">-Windows-</a>
+                        <a href="https://it.wikipedia.org/wiki/Macintosh" target="_blank">-Mac-</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Altro</td>
+                    <td class="menu_link">
+                        <a href="https://it.wikipedia.org/wiki/Network" target="_blank">-Network-</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Unità di misura</td>
+                    <td class="menu_link">
+                        <a href="https://it.wikipedia.org/wiki/Metro" target="_blank">-Metro-</a>
+                        <a href="https://it.wikipedia.org/wiki/Secondo" target="_blank">-Secondo-</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <!--ZOOM LV1-->
+        <h2 style="margin-left: 1.5%;color: rgb(175, 102, 0);">Macchina</h2>
+        <h3 style="margin-left: 47%;color: rgb(61, 207, 255);" class="base">ZOOM</h3>
+        <div class="ZOOM">
+
+            <table>
+                <tr>
+                    <td>Tipologie<br>Memorie</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/RAM" target="_blank">
+                            <abbr
+                                title="StaticRAM==>SRAM /// DynamicRAM===>DRAM /// SyncDynamicRAM===>SDRAM">RAM</abbr></a>
+
+                        <a href="https://it.wikipedia.org/wiki/Read_Only_Memory" target="_blank">
+                            <abbr title="ProgrammableROM===> PROM /// ErasableProgrammableROM===> EPROM /// ElectricallyErasableProgrammableROM===> EEPROM">ROM</abbr></a>
+                        <a href="https://it.wikipedia.org/wiki/Memoria_flash" target="_blank">Flash</a>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Logiche<br>(processori)</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/CPU" target="_blank">CPU</a>
+                        <a href="https://it.wikipedia.org/wiki/GPU" target="_blank">GPU</a>
+                        <a href="https://it.wikipedia.org/wiki/Unit%C3%A0_aritmetica_e_logica" target="_blank">ALU</a>
+                        <a href="https://it.wikipedia.org/wiki/Unit%C3%A0_di_calcolo_in_virgola_mobile"
+                            target="_blank">FPU</a>
+                        <a href="https://it.wikipedia.org/wiki/DSP" target="_blank">*DSP</a>
+                        <a href="https://it.wikipedia.org/wiki/Unit%C3%A0_di_gestione_della_memoria" target="_blank">MMU</a>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Archittetura processore</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/Architettura_ARM" target="_blank">ARM</a>
+                        <a href="https://en.wikipedia.org/wiki/Nios_II" target="_blank">NIOS II</a>
+                        <a href="https://it.wikipedia.org/wiki/Architettura_MIPS" target="_blank">MIPS</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--ZOOM LIV2-->
+        <h3 style="margin-left: 47%;color: rgb(61, 207, 255);" class="base">ZOOM +</h3>
+        <div class="ZOOM">
+
+            <table>
+                <tr>
+                    <td>CPU</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/CPU_cache" target="_blank">Cache</a>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>SDRAM</td>
+                    <td>
+                        <a href="https://it.wikipedia.org/wiki/DDR_SDRAM" target="_blank">DDR</a>
+                        <a href="https://it.wikipedia.org/wiki/DDR2" target="_blank">DDR2</a>
+                        <a href="https://it.wikipedia.org/wiki/DDR3" target="_blank">DDR3</a>
+                        <a href="https://it.wikipedia.org/wiki/DDR4" target="_blank">DDR4</a>
+                        <a href="https://it.wikipedia.org/wiki/DDR5" target="_blank">DDR5</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1>Altro</h1>
+    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+        <a href="https://it.wikipedia.org/wiki/Socket_(reti)">Socket</a>
+    </div>
+
+
+
+    <!--VIDEO-->
+    <div style="border-radius: 50px;border: .5px solid rgb(255, 27, 27);padding: 0 20px 20px 20px;margin-top: 50px;">
+
+        <h1 style="color: rgb(183, 17, 17);">AVANZATO</h1>
+
+        <h2>Programmazione in parallelo</h2>
+        <div class="video">
+            <div class="titoli">
+                <p>Segnavideo: 4</p>
+                <p>Difficoltà: <i>&#9733 &#9733 &#9733 &#9733 &#9734</i></p>
+            </div>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=Bb2Cfchh0LNtLG_4&amp;list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <h2>Blockchain</h2>
+        <div class="video">
+            <div class="titoli">
+                <p>Segnavideo: 1</p>
+                <p>Difficoltà: <i>&#9733 &#9733 &#9733 &#9733 &#9733</i></p>
+            </div>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=6xXzRbW7TevlTNhr&amp;list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <h2>Algoritmi</h2>
+        <div class="video">
+            <div class="titoli">
+                <p>Segnavideo: 2</p>
+                <p>Difficoltà: <i>&#9733 &#9733 &#9733 &#9733 &#9734</i></p>
+            </div>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=HcqiufkMezoB63JS&amp;list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        // GIORNO---NOTTE
+        let pagina = document.querySelector('#body')
+        let th = document.getElementsByTagName('th')
+        let td = document.getElementsByTagName('td')
+        let stelle = document.getElementsByTagName('i')
+        let link = document.getElementsByTagName('a')
+
+        document.querySelector('#mybtn').addEventListener('click', () => {
+            if (pagina.getAttribute('colore') == "buio") {
+                pagina.setAttribute('colore', 'luce')
+                pagina.style.backgroundColor = "white"
+                pagina.style.color = "black"
+                Array.from(th).forEach(e => e.style.border = ".5px solid black")
+                Array.from(td).forEach(e => e.style.border = ".5px solid black")
+                Array.from(stelle).forEach(e => e.style.color = "black")
+                Array.from(link).forEach(e => e.style.color = "rgb(108, 9, 247)")
+                document.querySelectorAll('.video').forEach(e => e.style.borderBottom = "3px solid black")
+                document.querySelectorAll('.base').forEach(e => e.style.color = "black")
+
+            }
+            else if (pagina.getAttribute('colore') == "luce") {
+                pagina.setAttribute('colore', 'buio')
+                pagina.style.backgroundColor = "black"
+                pagina.style.color = "white"
+                Array.from(th).forEach(e => e.style.border = ".5px solid white")
+                Array.from(td).forEach(e => e.style.border = ".5px solid white")
+                Array.from(stelle).forEach(e => e.style.color = "yellow")
+                Array.from(link).forEach(e => e.style.color = "rgb(255, 255, 105)")
+                document.querySelectorAll('.video').forEach(e => e.style.borderBottom = "3px solid white")
+                document.querySelectorAll('.base').forEach(e => e.style.color = "rgb(61, 207, 255)")
+
+            }
+        })
+        //
+    </script>
+
+    <!--NAVBAR-->
+    <script src="/static/js/componenti/navbar/menu.js"></script>
+    <script src="/static/js/componenti/navbar/navbar.js"></script>
+</body>
+
+</html>

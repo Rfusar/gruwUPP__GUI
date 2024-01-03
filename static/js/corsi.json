@@ -1,0 +1,58 @@
+
+{
+
+
+    "C _Canale youtube": "https://www.youtube.com/@TsodingDaily",
+    "C _BASE": "https://youtu.be/Bz4MxDeEM6k?si=J_YPBNmXu5rS_Wll",
+    "C _PUNTATORI": "https://youtu.be/zuegQmMdy8M?si=-GIMiPqH72o2d6V5",
+    "C _SOCKET LINUX": "https://youtu.be/KEiur5aZnIM?si=DCf17YK7F_6tJGdJ",
+
+    "C++ _BASE":"https://youtu.be/P2jVybFyh3A?si=U5Il3JGQPu6vZi-S" ,
+    "C++ _OOP":"https://youtu.be/0NwsayeOsd4?si=ieY3PiIEfcBKK4UZ" ,
+    "C++ _EMULARE LA CPU CON C++":"https://youtu.be/qJgsuQoy9bc?si=4APGIB_8tm5xuuRz",
+
+    "GO _BASE":"https://youtu.be/YS4e4q9oBaU?si=kzyRGtpfI6lqa75O",
+
+    "Java _BASE": "https://youtu.be/xk4_1vDrzzo",
+    "Java _GUI": "https://youtu.be/Kmgo00avvEw",
+    "Java _Springboot_BASE": "https://youtu.be/-mwpoE0x0JQ?si=usOs97faiejFJfh1",
+    "Java _Springboot_SECURITY": "https://youtu.be/her_7pa0vrg?si=-h4lp6u1u2fyVQjf",
+
+    "Javascript _BASE": "https://youtu.be/BI1o2H9z9fo?si=aqOw_SCKfHH9PGXtS",
+    "Javascript _FUNZIONI ASINCRONE": "https://youtu.be/VmQ6dHvnKIM?si=tSagPXTAHjgPbOQ8",
+    "Javascript _NATIVO": "https://youtube.com/playlist?list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G",
+    "Javascript _NODE": "https://youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo&si=EqEX7SueRoHXNvrA",
+    "Javascript _Frameworks_REACT": "https://youtu.be/w7ejDZ8SWv8?si=ew-z7l-L8GhlSQft",
+    "Javascript _Frameworks_ANGULAR": "https://youtu.be/3dHNOWTI7H8?si=dtFhrdb9zEGDq-kO",
+    "Javascript _Best_practice__1": "https://youtu.be/Mus_vwhTCq0?si=RGM8rcDC6J0chgk2",
+
+    "Powershell _BASE":"https://youtube.com/playlist?list=PLnK11SQMNnE4vcvuAahz4KhNOS7zOfmB3&si=gev6cB7xsvudUfpy",
+    "Powershell _MASTER_CLASS":"https://youtube.com/playlist?list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8&si=5yEMjmCU061vO8FU",
+    "Powershell _GUI":"https://youtube.com/playlist?list=PLnK11SQMNnE5_cl8n54h6OXNMnGl5Odtq&si=aI18J93ZmnkvuqLr ",
+        
+    "HTML5":"https://youtu.be/kUMe1FH4CHE?si=KP8NdjDikfPjHIzX",
+    "CSS3":"https://youtu.be/OXGznpKZ_sA?si=Fc_CdIKeXmdf5jFo",
+    "BASE_KOTLIN": "https://youtu.be/9-pFPGAOSZQ?si=iKlrE4Fzax6RPofP",
+    "BASE_DURT": "https://youtu.be/WxuViERlkyE?si=CWBIK-WyR4965j3X",
+    "40_comandi DOS": "https://youtu.be/Jfvg3CS1X3A?si=TL_4rYwEqt_LJfct",
+    "BASH": "https://youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w&si=qm8o-6Vmx5pzzTON",
+
+    "Tecnologie _Docker_VIDEO": "https://youtu.be/RqTEHSBrYFw?si=lheMncbmxt4tTg7M",
+    "Tecnologie _Docker_GITHUB": "https:///github.com/docker",
+    "Tecnologie _Kubernetes_VIDEO":"https://youtu.be/kTp5xUtcalw?si=gtTlIsJJDebue-Zl",
+    "Tecnologie _Kubernetes_GITHUB":"https://github.com/kubernetes",
+    "Tecnologie _ANDROID_STUDIO": "https://youtu.be/EExSSotojVI?si=2mO28d4wex88QPxi",
+    "Tecnologie _Database_SQL": "https://youtu.be/5OdVJbNCSso?si=LkFaEiLIf52Tr-mR",
+    "Tecnologie _Database_MONGO": "https://youtu.be/c2M-rlkkT5o?si=EYxVmI_aWLJYG06K",
+
+    "Documentazione _W3SCHOOL": "https://www.w3schools.com",
+    "Documentazione _MOZILLA": "https://developer.mozilla.org/en-US/",
+    "Documentazione _DEV": "https://devdocs.io/",
+    "Documentazione _KOFAX": "https://www.w3schools.com",
+
+
+    "Profili_studio _SPRINGBOOT": "https://spring.academy/home",
+    "Profili_studio _ANDROID_DEV": "https://developer.android.com/courses",
+    "Profili_studio _WEB_DEV": "https://web.dev/learn"
+        
+}
