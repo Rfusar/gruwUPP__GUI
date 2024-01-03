@@ -1,7 +1,7 @@
 # GUI per Studiare in modo PRODUTTIVO E SELETTIVO 
 ## esempio per Web_developer
 
-![PaginaMENU](C:/Users/Utente/Desktop/proveProgetti/prove_Go/provaServer/Cattura.PNG)
+![PaginaMENU](C:/Users/Utente/Desktop/proveProgetti/prove_Go/provaServer/Cattura.JPG)
 
 ### Possibilita
 1. salva i link nel foglio JSON per renderli disponibili nella barra di ricerca
