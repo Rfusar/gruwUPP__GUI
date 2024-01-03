@@ -1,7 +1,7 @@
 # GUI per Studiare in modo PRODUTTIVO E SELETTIVO 
 ## esempio per Web_developer
 
-![PaginaMENU](img_github\Cattura.JPG)
+![PaginaMENU](img_github/Cattura.JPG)
 
 ### Possibilita
 1. salva i link nel foglio JSON per renderli disponibili nella barra di ricerca
