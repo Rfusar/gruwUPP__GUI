@@ -1,3 +1,8 @@
+Object.entries({
+    "margin": 0,
+    "padding": 0
+}).forEach(([k, v])=>document.body.style[k] = v)
+
 //*CORSI NETTUNO
 const divNettuno = document.createElement('div')
 divNettuno.style.display = "flex"
@@ -42,7 +47,7 @@ new Array(p0, p1).forEach(e => div1.append(e))
 
 const iframe = document.createElement('iframe')
 iframe.src = "https://www.youtube.com/embed/videoseries?si=ku5Kn5sGGsfVq-Av&amp;list=PLUL1bzfXcbX14C_LblfpQx_VHMHzO1nL6"
-iframe.allowfullscreen = true
+iframe.allowFullscreen = true
 iframe.width = "560px"
 iframe.height = "315px"
 
@@ -60,3 +65,8 @@ const links = Object.entries({
 });
 
 document.getElementsByTagName('main')[0].append(...links);
+
+Object.entries({
+    "padding": "50px"
+}).forEach(([k, v])=>{document.getElementsByTagName('main')[0].style[k] = v})
+

@@ -89,7 +89,7 @@ function creazioneTabellaVideo(data) {
     iframe.src = data.src
     iframe.width = "560"
     iframe.height = "315"
-    iframe.allowfullscreen = true
+    iframe.allowFullscreen = true
 
     new Array(h2, div2, iframe).forEach(e => divSecondario.append(e))
 
