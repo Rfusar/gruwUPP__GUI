@@ -33,6 +33,34 @@ function checkLINK(element, testo, path, array, document) {
         }).forEach(([k, v]) => { element.style[k] = v })
         element.placeholder = "Cerca..."
 
+        //ANIMAZIONE
+        const RADIUS_MAX = 28
+        const SPEED = 1.8
+        let radius = null
+        element.addEventListener('focus', () => {
+            radius = 0;
+            const intervalId = setInterval(() => {
+                element.style.borderRadius = `0px ${radius}px 0px 0px`;
+                radius += SPEED;
+                if (radius >= RADIUS_MAX) {
+                    clearInterval(intervalId);
+                    element.style.borderRadius = `0px ${RADIUS_MAX}px 0px 0px`;
+                }
+            }, 30);
+        });
+
+        element.addEventListener('blur', () => {
+            radius = RADIUS_MAX;
+            const intervalId = setInterval(() => {
+                element.style.borderRadius = `0px ${radius}px 0px 0px`;
+                radius -= SPEED;
+                if (radius <= 0) {
+                    clearInterval(intervalId);
+                    element.style.borderRadius = '0px';
+                }
+            }, 30);
+        });
+
         array.push(element)
 
         barraDiRicerca(element, document)
@@ -58,7 +86,7 @@ function Sottomenu(Posizione, id, links, document, check) {
             "borderRadius": "3px",
             "backgroundColor": "#ffffff",
             "overflow": "hidden"
-        }).forEach(([k, v])=>{ sottomenu.style[k] = v})
+        }).forEach(([k, v]) => { sottomenu.style[k] = v })
 
         const MENU_ = ["SALUTE", "PASTIGLIE", "MAILGUN", "ZOHO", "COMPILATORE"]
         for (const [nomeLink, Path] of Object.entries(links)) {
@@ -117,7 +145,7 @@ function barraDiRicerca(barra, document) {
                 a.target = "_blank"
                 a.style.color = "black"
                 a.style.textDecoration = "none"
-                a.style.margin = "2px"
+                a.style.margin = "2px 10px"
                 return a
             })
             .forEach((e, i) => {
@@ -145,7 +173,7 @@ function barraDiRicerca(barra, document) {
 
         event.target.value.length != 0
             ? div.animate(Animazione(div, true)["keyframes"], Animazione(div, true)["options"])
-            : div.animate(Animazione(div, false)["keyframes"], Animazione(div, false)["options"])      
+            : div.animate(Animazione(div, false)["keyframes"], Animazione(div, false)["options"])
     })
 }
 function Animazione(div, valore) {
@@ -169,7 +197,7 @@ function Animazione(div, valore) {
         fill: 'both',
     };
     return {
-        "keyframes":keyframes, 
+        "keyframes": keyframes,
         "options": options
     }
 }
