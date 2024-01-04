@@ -5,6 +5,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"golang.org/x/net/html"
 	"strings"
 	"bufio"
 	"log"
@@ -113,4 +114,31 @@ func checkCredentials(username, password , UTENTE, PASSWORD string) bool {
 	expectedUsername := UTENTE
 	expectedPassword := PASSWORD
 	return username == expectedUsername && password == expectedPassword
+}
+
+
+
+
+
+
+func traverseHTML(node *html.Node, depth int) {
+	if node.Type == html.ElementNode {
+		indent := ""
+		for i := 0; i < depth; i++ {
+			indent += "  "
+		}
+		fmt.Printf("%s<%s>\n", indent, node.Data)
+	}
+
+	for child := node.FirstChild; child != nil; child = child.NextSibling {
+		traverseHTML(child, depth+1)
+	}
+
+	if node.Type == html.ElementNode {
+		indent := ""
+		for i := 0; i < depth; i++ {
+			indent += "  "
+		}
+		fmt.Printf("%s</%s>\n", indent, node.Data)
+	}
 }
