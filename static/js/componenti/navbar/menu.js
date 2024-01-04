@@ -1,3 +1,10 @@
+//document.body.style.backgroundColor = "#343f52"
+document.body.style.backgroundImage = "url('/static/img/!Fantasy.png')"
+document.body.style.backgroundSize = "cover"
+document.body.style.backgroundPosition = "center"
+
+
+
 function checkLINK(element, testo, path, array, document) {
     if (element.nodeName.toLowerCase() === 'a') {
 
@@ -21,15 +28,15 @@ function checkLINK(element, testo, path, array, document) {
     }
     //*FUTURO SEARCH-INPUT 
     else if (element.nodeName.toLowerCase() === 'input') {
-
-        element.style.border = "none"
-        element.style.marginLeft = ".8rem"
-        element.style.backgroundColor = "rgba(250, 250, 250, 0.7)"
-        element.style.borderBottom = "2px solid blue"
-        element.style.outline = "none"
-        element.style.marginTop = "1rem"
-        element.style.height = "25px"
-        element.style.fontSize = "18px"
+        const STYLE_barra = element.style
+        STYLE_barra.border = "none"
+        STYLE_barra.marginLeft = ".8rem"
+        STYLE_barra.backgroundColor = "rgba(250, 250, 250, 0.7)"
+        STYLE_barra.borderBottom = "2px solid blue"
+        STYLE_barra.outline = "none"
+        STYLE_barra.marginTop = "1rem"
+        STYLE_barra.height = "25px"
+        STYLE_barra.fontSize = "18px"
         element.placeholder = "Cerca..."
 
         array.push(element)
@@ -113,6 +120,7 @@ function barraDiRicerca(barra, document) {
     Ds.backgroundColor = "white"
     Ds.color = "black"
     Ds.overflow = "hidden"
+    Ds.borderRadius = "0px 0px 5px 5px"
 
     async function DIZIONARIO() {
         const res = await fetch("/api.corsi")
@@ -129,20 +137,17 @@ function barraDiRicerca(barra, document) {
             }
             return ricerca
         })()
-        const LINKs = await (async () => {
-            const links = []
-            for (const [k, v] of Object.entries(RICERCA)) {
-                const a = document.createElement('a')
-                a.textContent = v.key
-                a.classList = "item-link-JSON"
-                a.target = "_blank"
-                a.style.color = "black"
-                a.style.textDecoration = "none"
-                a.href = v.value
-                links.push(a)
-            }
-            return links
-        })()
+        const LINKs = Object.entries(RICERCA).map(([_, v]) => {
+            const a = document.createElement('a')
+            a.textContent = v.key
+            a.href = v.value
+            a.classList = "item-link-JSON"
+            a.target = "_blank"
+            a.style.color = "black"
+            a.style.textDecoration = "none"
+            a.style.margin = "2px"
+            return a
+        })
         LINKs.forEach((e, i) => {
             i < div.children.length
                 ? div.replaceChild(e, div.children[i])
@@ -152,7 +157,7 @@ function barraDiRicerca(barra, document) {
         const SEARCH = document.body.childNodes[0].childNodes[0]
         Ds.left = `${SEARCH.getBoundingClientRect().left}px`
         Ds.right = `${SEARCH.getBoundingClientRect().right}px`
-        Ds.top = `${SEARCH.getBoundingClientRect().bottom}px`
+        Ds.top = `${SEARCH.getBoundingClientRect().bottom +5}px`
 
         document.body.append(div)
 

@@ -1,4 +1,7 @@
+
 const paginaNovita = document.createElement("div")
+const sfondo = document.createElement("div")
+
 for (let i = 0; i < 4; i++) {
     const p = document.createElement('span')
     paginaNovita.append(p)
@@ -14,10 +17,10 @@ new Array(front_end, back_end).forEach(e => {
                 "https://www.youtube.com/embed/videoseries?si=wa902zgLmiRI0cvL&amp;list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo",
                 //POWERSHELL
                 "https://www.youtube.com/embed/videoseries?si=bco60U1a-vc_X09A&amp;list=PLnK11SQMNnE4vcvuAahz4KhNOS7zOfmB3",
-                //
-                "",
-                //
-                "",
+                //PYTHON
+                "https://www.youtube.com/embed/mDKM-JtUhhc?si=UlqTTsF6MxuoBoZR",
+                //GO
+                "https://www.youtube.com/embed/YS4e4q9oBaU?si=BKJVBN6ZwBcbZYYw",
             ]
             VIDEO(NOVITA)
         }
@@ -57,8 +60,6 @@ document.getElementsByTagName('main')[0].append(paginaNovita)
 
 function VIDEO(linkArray) {
     const links = [linkArray[0], linkArray[1], linkArray[2], linkArray[3]]
-    console.log(front_end.getAttribute('attivo'))
-    console.log(back_end.getAttribute('attivo'))
     for (let i = 0; i < 4; i++) {
         const frame = document.createElement('iframe')
         frame.width = "690px"
