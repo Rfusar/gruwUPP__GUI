@@ -1,10 +1,3 @@
-//document.body.style.backgroundColor = "#343f52"
-document.body.style.backgroundImage = "url('/static/img/!Fantasy.png')"
-document.body.style.backgroundSize = "cover"
-document.body.style.backgroundPosition = "center"
-
-
-
 function checkLINK(element, testo, path, array, document) {
     if (element.nodeName.toLowerCase() === 'a') {
 
@@ -28,15 +21,16 @@ function checkLINK(element, testo, path, array, document) {
     }
     //*FUTURO SEARCH-INPUT 
     else if (element.nodeName.toLowerCase() === 'input') {
-        const STYLE_barra = element.style
-        STYLE_barra.border = "none"
-        STYLE_barra.marginLeft = ".8rem"
-        STYLE_barra.backgroundColor = "rgba(250, 250, 250, 0.7)"
-        STYLE_barra.borderBottom = "2px solid blue"
-        STYLE_barra.outline = "none"
-        STYLE_barra.marginTop = "1rem"
-        STYLE_barra.height = "25px"
-        STYLE_barra.fontSize = "18px"
+        Object.entries({
+            "border": "none",
+            "marginLeft": ".8rem",
+            "backgroundColor": "rgba(250, 250, 250, 0.7)",
+            "borderBottom": "2px solid blue",
+            "outline": "none",
+            "marginTop": "1rem",
+            "height": "25px",
+            "fontSize": "18px"
+        }).forEach(([k, v]) => { element.style[k] = v })
         element.placeholder = "Cerca..."
 
         array.push(element)
@@ -52,20 +46,19 @@ function Sottomenu(Posizione, id, links, document, check) {
         sottomenu.setAttribute('id', id)
         sottomenu.setAttribute("class", "menu")
         sottomenu.classList.add("sottomenuAnimazione")
-
-        const STYLE_sottomenu = sottomenu.style
-        STYLE_sottomenu.display = "flex"
-        STYLE_sottomenu.flexDirection = "column"
-        STYLE_sottomenu.position = "absolute"
-        STYLE_sottomenu.top = `${Posizione['top'].toFixed(2)}px`
-        //STYLE_sottomenu.bottom = `${Posizione['bottom'].toFixed(2)}px`
-        STYLE_sottomenu.right = `${Posizione['right'].toFixed(2)}px`
-        STYLE_sottomenu.left = `${Posizione['left'].toFixed(2)}px`
-        STYLE_sottomenu.width = "max-content"
-        STYLE_sottomenu.height = "max-content"
-        STYLE_sottomenu.borderRadius = "3px"
-        STYLE_sottomenu.backgroundColor = "#ffffff"
-        STYLE_sottomenu.overflow = "hidden"
+        Object.entries({
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "absolute",
+            "top": `${Posizione['top'].toFixed(2)}px`,
+            "right": `${Posizione['right'].toFixed(2)}px`,
+            "left": `${Posizione['left'].toFixed(2)}px`,
+            "width": "max-content",
+            "height": "max-content",
+            "borderRadius": "3px",
+            "backgroundColor": "#ffffff",
+            "overflow": "hidden"
+        }).forEach(([k, v])=>{ sottomenu.style[k] = v})
 
         const MENU_ = ["SALUTE", "PASTIGLIE", "MAILGUN", "ZOHO", "COMPILATORE"]
         for (const [nomeLink, Path] of Object.entries(links)) {
@@ -83,16 +76,8 @@ function Sottomenu(Posizione, id, links, document, check) {
             sottomenu.append(LINK)
         }
         document.body.appendChild(sottomenu)
-        const altezzaMassima = sottomenu.offsetHeight;
-        const keyframes = [
-            { height: "0px" },
-            { height: altezzaMassima + 'px' }
-        ];
-        const options = {
-            duration: 400,
-            fill: 'both'
-        };
-        sottomenu.animate(keyframes, options);
+
+        sottomenu.animate(Animazione(sottomenu, true)["keyframes"], Animazione(sottomenu, true)["options"]);
     }
 }
 
@@ -113,59 +98,54 @@ function rimuoviEventiMousemove(document) {
 
 function barraDiRicerca(barra, document) {
     const div = document.createElement('div')
-    const Ds = div.style
-    Ds.display = "flex"
-    Ds.flexDirection = "column"
-    Ds.width = "max-content"
-    Ds.backgroundColor = "white"
-    Ds.color = "black"
-    Ds.overflow = "hidden"
-    Ds.borderRadius = "0px 0px 5px 5px"
 
-    async function DIZIONARIO() {
-        const res = await fetch("/api.corsi")
-        return await res.json()
-    }
+    async function DIZIONARIO() { const res = await fetch("/api.corsi"); return await res.json() }
+
     barra.addEventListener('input', async (event) => {
-        const RICERCA = await (async () => {
-            const ricerca = []
-            let input = event.target.value
-            const dizionario = await DIZIONARIO()
-            for (const [k, v] of Object.entries(dizionario)) {
-                if (k.includes(input) && input != "") { ricerca.push({ "key": k, "value": v }) }
-                else if (input == "") { ricerca.length = 0 }
-            }
-            return ricerca
-        })()
-        const LINKs = Object.entries(RICERCA).map(([_, v]) => {
-            const a = document.createElement('a')
-            a.textContent = v.key
-            a.href = v.value
-            a.classList = "item-link-JSON"
-            a.target = "_blank"
-            a.style.color = "black"
-            a.style.textDecoration = "none"
-            a.style.margin = "2px"
-            return a
-        })
-        LINKs.forEach((e, i) => {
-            i < div.children.length
-                ? div.replaceChild(e, div.children[i])
-                : div.appendChild(e)
-        })
-        Ds.position = "absolute"
+        Object.entries(await DIZIONARIO())
+            .map(([k, v]) => {
+                k.includes(event.target.value) && event.target.value != ""
+                    ? obj = { "key": k, "value": v }
+                    : obj = null;
+                return obj
+            })
+            .filter(e => e != null)
+            .map(e => {
+                const a = document.createElement('a')
+                a.textContent = e['key']
+                a.href = e['value']
+                a.target = "_blank"
+                a.style.color = "black"
+                a.style.textDecoration = "none"
+                a.style.margin = "2px"
+                return a
+            })
+            .forEach((e, i) => {
+                i < div.children.length
+                    ? div.replaceChild(e, div.children[i])
+                    : div.append(e)
+            })
         const SEARCH = document.body.childNodes[0].childNodes[0]
-        Ds.left = `${SEARCH.getBoundingClientRect().left}px`
-        Ds.right = `${SEARCH.getBoundingClientRect().right}px`
-        Ds.top = `${SEARCH.getBoundingClientRect().bottom +5}px`
+        const Style_DIV = {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "absolute",
+            "left": `${SEARCH.getBoundingClientRect().left}px`,
+            "right": `${SEARCH.getBoundingClientRect().right}px`,
+            "top": `${SEARCH.getBoundingClientRect().bottom + 5}px`,
+            "width": "max-content",
+            "backgroundColor": "white",
+            "color": "black",
+            "overflow": "hidden",
+            "borderRadius": "0px 0px 5px 5px"
+        }
+        Object.entries(Style_DIV).forEach(([k, v]) => { div.style[k] = v })
 
         document.body.append(div)
 
         event.target.value.length != 0
-            ? Animazione(div, true)
-            : Animazione(div, false);
-
-
+            ? div.animate(Animazione(div, true)["keyframes"], Animazione(div, true)["options"])
+            : div.animate(Animazione(div, false)["keyframes"], Animazione(div, false)["options"])      
     })
 }
 function Animazione(div, valore) {
@@ -188,5 +168,8 @@ function Animazione(div, valore) {
         duration: 400,
         fill: 'both',
     };
-    div.animate(keyframes, options);
+    return {
+        "keyframes":keyframes, 
+        "options": options
+    }
 }

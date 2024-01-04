@@ -22,7 +22,7 @@ for (let i = 0; i < N_link; i++) {
     i != 0 ? elemento = "a" : elemento = "input"
     const LINK = document.createElement(elemento)
     switch (i) {
-        case 0: 
+        case 0:
             checkLINK(LINK, null, null, LINKs, document)
             break
         case 1: checkLINK(LINK, P['studio']['studio'], null, LINKs, null); break
@@ -36,22 +36,17 @@ for (const LINK of LINKs) { nav.append(LINK) }
 
 
 
-const STYLE_nav = nav.style
-STYLE_nav.display = "flex"
-STYLE_nav.flexDirection = "row"
-STYLE_nav.justifyContent = "space-around"
-STYLE_nav.height = "8vh"
-STYLE_nav.backgroundColor = "#60d168"
-STYLE_nav.borderRadius = "0px 0px 10px 0px"
+const STYLE_nav = {
+    "display": "flex",
+    "flexDirection": "row",
+    "justifyContent": "space-around",
+    "height": "8vh",
+    "backgroundColor": "#60d168",
+    "borderRadius": "0px 0px 10px 0px",
+}
+Object.entries(STYLE_nav).forEach(([k,v])=>{nav.style[k] = v})
 
-
-//nav è nel DOM
-const body = document.body
-body.style.margin = "0px"
-body.style.padding = "0px"
-const firstChild = body.firstChild
-body.insertBefore(nav, firstChild)
-
+document.body.insertBefore(nav, document.body.firstChild)
 
 //CREAZIONE SOTTOMENU
 let check = 0
@@ -62,7 +57,6 @@ nav.childNodes.forEach(child => {
             check += 1
             const Posizione = {}
             Posizione['top'] = nav.getBoundingClientRect().bottom
-            Posizione['bottom'] = child.getBoundingClientRect().bottom
             Posizione['left'] = child.getBoundingClientRect().left
             Posizione['right'] = child.getBoundingClientRect().right
 

@@ -1,3 +1,11 @@
+Object.entries({
+    "margin": "0px",
+    "padding": "0px",
+    "backgroundImage": "url('/static/img/!Fantasy.png')",
+    "backgroundSize": "cover",
+    "backgroundPosition": "center"
+}).forEach(([k, v]) => { document.body.style[k] = v })
+
 
 const paginaNovita = document.createElement("div")
 const sfondo = document.createElement("div")
