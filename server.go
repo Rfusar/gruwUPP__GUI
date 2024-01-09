@@ -37,10 +37,6 @@ func main(){
 
 
 
-
-
-
-
 func IPlocale() net.IP {  
 	interf, err := net.InterfaceByName("Wi-Fi 2")
 	if err != nil {

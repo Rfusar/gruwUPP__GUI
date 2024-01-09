@@ -2,20 +2,32 @@ import { Componente_GENITORE } from "../../Componente.js"
 import { Colori, gradezza_char } from "../../stile/variabili.js"
 import { Animazione___E_nav } from "../../navbar/funcs.js"
 
-import { stile_elemento } from "../../funzioni.js"
+import { stile_elemento, attivazioneTABELLA } from "../../funzioni.js"
+
+//*per gestire tabelle
+import { workSpace } from "../workSpace.js"
+const CARDS = (new workSpace).getCARDS()
+
 
 export class Sidebar extends Componente_GENITORE {
     constructor() {
         super("div", "sidebar")
         //*Set elementi sidebar
         this.CAMPI = {
-            MyCompany: ["Azienda", "Colleghi", "Documenti"],
+            //MyCompany: ["Azienda", "Colleghi", "Documenti"],
+
+            Aziende: true,
+            Utenti: true,
+            Documenti: true,
+            Ticktes: true,
+
             Partner: false,
             Logout: true
         }
         this.elementi()
     }
     elementi() {
+
         //& TITOLO SIDEBAR
         const nomeAzienda = document.createElement("div")
         stile_elemento({
@@ -24,7 +36,8 @@ export class Sidebar extends Componente_GENITORE {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "0px 0px 10px 0px"
+            margin: "0px 0px 10px 0px",
+            cursor: "default"
         }, nomeAzienda)
 
         const titolo = document.createElement("span")
@@ -36,6 +49,8 @@ export class Sidebar extends Componente_GENITORE {
         }, titolo)
 
         nomeAzienda.append(titolo)
+
+
 
         //& CAMPI SIDEBAR
         const div = document.createElement("div")
@@ -49,8 +64,8 @@ export class Sidebar extends Componente_GENITORE {
         Object.entries(this.CAMPI).forEach(([k, v]) => {
             if (v) {
                 //*menu a tendina
-                if(Array.isArray(v)){}
-                
+                if (Array.isArray(v)) { }
+
                 const img = document.createElement('img')
                 img.alt = " "
 
@@ -66,23 +81,29 @@ export class Sidebar extends Componente_GENITORE {
                 stile_elemento({
                     margin: "1.3rem 0rem",
                     cursor: "pointer",
-                    padding:".6rem",
+                    padding: ".6rem",
                     borderRadius: "3px"
                 }, elemento)
                 elemento.classList.add("elementi_evento")
-                
+
                 new Array(img, campo).forEach(e => elemento.append(e))
 
                 const [IN, OUT] = Animazione___E_nav(elemento)
                 elemento.addEventListener('mouseover', () => { IN(elemento) })
                 elemento.addEventListener('mouseout', () => { OUT(img) })
 
+                for (const titoloTabella of CARDS) {
+                    campo.textContent == titoloTabella.getAttribute('id')
+                        ? attivazioneTABELLA(elemento, titoloTabella)
+                        : null
+                }
                 div.append(elemento)
             }
         })
 
+
         //*SCHERMO
-        new Array(nomeAzienda, div).forEach(e=>this.elemento.append(e))
+        new Array(nomeAzienda, div).forEach(e => this.elemento.append(e))
         return this
     }
 }

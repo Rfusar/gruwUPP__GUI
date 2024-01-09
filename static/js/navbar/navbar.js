@@ -8,8 +8,8 @@ export class Navbar extends Componente_GENITORE {
     constructor() {
         super('nav')
         this.campi = {
-            "home": true,
-            "contatti": true
+            home: false,
+            contatti: true
         }
     }
     elementi() {
@@ -22,7 +22,8 @@ export class Navbar extends Componente_GENITORE {
             borderBottom: "3px solid red",
             height: "30px",
             outline: "none",
-            borderRadius:"5px"
+            borderRadius:"5px",
+            width: "20rem"
         }, search)
 
         //*CAMPI
@@ -53,7 +54,3 @@ export class Navbar extends Componente_GENITORE {
         return this
     }
 }
-
-
-
-

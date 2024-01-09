@@ -1,11 +1,14 @@
 import { Navbar } from "./js/navbar/navbar.js"
 import { Sidebar } from "./js/main/sidebar/sidebar.js"
-import { workSpace } from "./js/main/main.js"
+import { workSpace } from "./js/main/workSpace.js"
 import { Colori } from "./js/stile/variabili.js"
 
 //*set PAGE
 document.getElementsByTagName('title')[0].textContent = "MYPage"
 
+
+const CARDS = (new workSpace).getCARDS()
+console.log(CARDS)
 
 //*COMPONENTI
 new Navbar().elementi().Style({
@@ -18,6 +21,16 @@ new Navbar().elementi().Style({
     backgroundColor: Colori['navbar']
 }).schermo(0, "main")
 
+new workSpace().Style({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "92vh",
+    backgroundColor: Colori['main']
+}).schermo(1, "main")
+
+
+
 new Sidebar().Style({
     display: "flex",
     flexDirection: "column",
@@ -27,12 +40,3 @@ new Sidebar().Style({
     overflow: "hidden",
     backgroundColor: Colori['sidebar']
 }).schermo(0)
-
-new workSpace().Style({
-    display: "flex",
-    height: "92vh",
-    backgroundColor: Colori['main']
-}).schermo(1, "main")
-
-
-
