@@ -2,6 +2,8 @@ import { Componente_GENITORE } from "../../Componente.js"
 import { Colori, gradezza_char } from "../../stile/variabili.js"
 import { Animazione___E_nav } from "../../navbar/funcs.js"
 
+import { creazioneTendina } from "./funcs.js"
+
 import { stile_elemento, attivazioneTABELLA } from "../../funzioni.js"
 
 //*per gestire tabelle
@@ -14,12 +16,12 @@ export class Sidebar extends Componente_GENITORE {
         super("div", "sidebar")
         //*Set elementi sidebar
         this.CAMPI = {
-            //MyCompany: ["Azienda", "Colleghi", "Documenti"],
+            MyCompany: ["Azienda", "Colleghi", "Documenti"],
 
-            Aziende: true,
-            Utenti: true,
-            Documenti: true,
-            Ticktes: true,
+            //Aziende: true,
+            //Utenti: true,
+            //Documenti: true,
+            //Ticktes: true,
 
             Partner: false,
             Logout: true
@@ -63,9 +65,6 @@ export class Sidebar extends Componente_GENITORE {
 
         Object.entries(this.CAMPI).forEach(([k, v]) => {
             if (v) {
-                //*menu a tendina
-                if (Array.isArray(v)) { }
-
                 const img = document.createElement('img')
                 img.alt = " "
 
@@ -88,10 +87,20 @@ export class Sidebar extends Componente_GENITORE {
 
                 new Array(img, campo).forEach(e => elemento.append(e))
 
+
+                //*menu a tendina
+                if (Array.isArray(v)) {
+                    elemento.addEventListener('click', () => {
+                        creazioneTendina(elemento, v)
+                    })
+                }
+
+                //*ANIMAZIONE MOUSEOVER 
                 const [IN, OUT] = Animazione___E_nav(elemento)
                 elemento.addEventListener('mouseover', () => { IN(elemento) })
                 elemento.addEventListener('mouseout', () => { OUT(img) })
 
+                //*GESTIONE TABELLE
                 for (const titoloTabella of CARDS) {
                     campo.textContent == titoloTabella.getAttribute('id')
                         ? attivazioneTABELLA(elemento, titoloTabella)

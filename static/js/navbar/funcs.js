@@ -1,4 +1,4 @@
-export function Animazione___E_nav(elemento,
+function Animazione___E_nav(elemento,
     SPEED = 0.05,
     MAX_OPACITY = 0.3,
     COLOR = `rgba(255, 255, 255,`,
@@ -33,3 +33,8 @@ export function Animazione___E_nav(elemento,
     };
     return [IN, OUT];
 }
+
+
+
+
+export {Animazione___E_nav}

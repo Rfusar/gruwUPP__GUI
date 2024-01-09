@@ -7,6 +7,9 @@ const Colori = {
         titoli: "rgb(255, 255, 255)", //*BIANCO
         campi: "rgb(255, 255, 255)", //*BIANCO
         base: "rgb(255, 255, 255)", //*BIANCO
+    },
+    elementi:{
+        tabella: "white"
     }
 }
 

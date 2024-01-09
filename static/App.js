@@ -7,8 +7,7 @@ import { Colori } from "./js/stile/variabili.js"
 document.getElementsByTagName('title')[0].textContent = "MYPage"
 
 
-const CARDS = (new workSpace).getCARDS()
-console.log(CARDS)
+//const CARDS = (new workSpace).getCARDS()
 
 //*COMPONENTI
 new Navbar().elementi().Style({
@@ -20,6 +19,8 @@ new Navbar().elementi().Style({
     height: "6vh",
     backgroundColor: Colori['navbar']
 }).schermo(0, "main")
+
+
 
 new workSpace().Style({
     display: "flex",
@@ -40,3 +41,6 @@ new Sidebar().Style({
     overflow: "hidden",
     backgroundColor: Colori['sidebar']
 }).schermo(0)
+
+
+
