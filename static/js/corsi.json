@@ -1,5 +1,4 @@
 {
-
     "C _Canale youtube": "https://www.youtube.com/@TsodingDaily",
     "C _BASE": "https://youtu.be/Bz4MxDeEM6k?si=J_YPBNmXu5rS_Wll",
     "C _PUNTATORI": "https://youtu.be/zuegQmMdy8M?si=-GIMiPqH72o2d6V5",
@@ -17,15 +16,19 @@
     "Java _Springboot_SECURITY": "https://youtu.be/her_7pa0vrg?si=-h4lp6u1u2fyVQjf",
 
     "Javascript _BASE": "https://youtu.be/BI1o2H9z9fo?si=aqOw_SCKfHH9PGXtS",
+    "Javascript _Advanced": "https://youtube.com/playlist?list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd&si=SUXK1vQCfBaEUpGX",
     "Javascript _FUNZIONI ASINCRONE": "https://youtu.be/VmQ6dHvnKIM?si=tSagPXTAHjgPbOQ8",
-    "Javascript _NATIVO": "https://youtube.com/playlist?list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G",
+    "Javascript _NATIVO": "https://youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&si=HoQoxD79xfq23-cV",
     "Javascript _NODE": "https://youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo&si=EqEX7SueRoHXNvrA",
     "Javascript _Frameworks_REACT": "https://youtu.be/w7ejDZ8SWv8?si=ew-z7l-L8GhlSQft",
     "Javascript _Frameworks_ANGULAR": "https://youtu.be/3dHNOWTI7H8?si=dtFhrdb9zEGDq-kO",
     "Javascript _Best_practice__1": "https://youtu.be/Mus_vwhTCq0?si=RGM8rcDC6J0chgk2",
+    "Javascript _CanvasBase":"https://youtube.com/playlist?list=PLc1g3vwxhg1W7Mqwoji844GadZf34lBzR&feature=shared",
+    "Javascript _CanvasIntermedio":"https://youtu.be/Yvz_axxWG4Y?feature=shared",
 
 
     "Python _BASE": "https://youtu.be/mDKM-JtUhhc?si=utpt932DKz_LscxB",
+    "Python _Base+": "https://youtu.be/HGOBQPFzWKo?si=8UGGUyTFcpcH1O-D",
 
     "Powershell _BASE":"https://youtube.com/playlist?list=PLnK11SQMNnE4vcvuAahz4KhNOS7zOfmB3&si=gev6cB7xsvudUfpy",
     "Powershell _MASTER_CLASS":"https://youtube.com/playlist?list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8&si=5yEMjmCU061vO8FU",
@@ -50,14 +53,21 @@
     "Tecnologie _Database_SQL": "https://youtu.be/5OdVJbNCSso?si=LkFaEiLIf52Tr-mR",
     "Tecnologie _Database_MONGO": "https://youtu.be/c2M-rlkkT5o?si=EYxVmI_aWLJYG06K",
 
+    "Editor _VScodeBASE": "https://youtu.be/WPqXP_kLzpo?si=4xYlmB7q7TCBdy2A",
+
     "Documentazione _W3SCHOOL": "https://www.w3schools.com",
     "Documentazione _MOZILLA": "https://developer.mozilla.org/en-US/",
     "Documentazione _DEV": "https://devdocs.io/",
-    "Documentazione _KOFAX": "https://www.w3schools.com",
-
+    "Documentazione _KOFAX": "https://docshield.kofax.com/complete-list.htm",
 
     "Profili_studio _SPRINGBOOT": "https://spring.academy/home",
     "Profili_studio _ANDROID_DEV": "https://developer.android.com/courses",
-    "Profili_studio _WEB_DEV": "https://web.dev/learn"
-        
+    "Profili_studio _WEB_DEV": "https://web.dev/learn",
+    "Profili_studio _Microsoft": "https://learn.microsoft.com/it-it/training/browse/?roles=developer&resource_type=learning%20path&wt.mc_id=developermscom",
+    
+    "Canale _Javascript_canvas": "https://www.youtube.com/@Frankslaboratory",
+    "Canale _freeCodeCamp": "https://www.youtube.com/@freecodecamp",
+
+    "Corsi _internet_HowToNetwork": "https://youtu.be/xmpYfyNmWbw",
+    "Corsi _internet_freecodecamp": "https://youtu.be/qiQR5rTSshw?si=7F2YVvAVPCppzsHZ"
 }

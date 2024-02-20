@@ -1,0 +1,42 @@
+un genere letterarrio è una categoria di composizione letterara
+
+si distingue tra poesia, prosa e teatro
+
+la prima è costituita dai classici componenti in versi che cercano di emulare i suoni con parole,
+la seconda raggruppa in se i racconti e i romanzi, ovvero quelle opere non in versi
+
+se un particolare raconto o romanzo non è normalmente classificabile allora si parla di narattiva generica
+altri esempi di generi narrattivi sono i fotoromanzi(romanza per immagini) o screenplay(le sceneggiature, cinematografiche o televisive che siano, fonte di attenzione, in anni
+recenti, per il mercato editoriale)
+
+come si individua il genere??
+l'individuazione costituisce uno preblema a partire dal rinascimento(epoca della scoprta di poetica di aristotele)
+
+canoni per individuare il genere:
+
+1) linguaggio della scrittura (epica(letteratura) o drammatica(teatro))
+2) la natura dei temi trattati (il genere è definito dalla forma del tema, solo attraverso la combinazione di tema e forma, si puo riconoscere il genere)
+
+Un'altra epoca fondamentale della storia della teoria dei generi in età romantica quando Hegel
+nell'Estetica distingue i tre generi dell'epica, della lirica e del dramma
+
+
+tecniche e strutture
+
+-enjambement: TECNICA
+    è una tecnica letteraria e consiste nello spezzare il verso alla riga succesiva e d'è un elemento
+    che contribuisce al ritmo dell'opera
+
+-sonetto: STRUTTURA
+    è un breve componimento poetico tipo nella letteratura italiana, che si riferiva ad una canzone, la forma tipica
+    è di 14 versi endacasillai ragruppati da due quartine a rima alternata o incrociata e due terzine a rima varia.
+
+-rima: TECNICA
+    AABB -> rima baciata
+    ABAB CDCD -> alternata
+    ABA BCB DBD -> incatenata
+
+-endecasillabo: STRUTTURA
+    è il verso nel quale l'accento principale si trova seulla decima sellaba metrica. 
+    Tuttavia di norma gli endecasillabi presentano un accento fisso o sulla quarta o sulla sesta sede
+    È il metro principale della poesia italiana e si trova in tutte le formazioni più importanti, come la ballata, la canzone, il sonetto, l'ottava

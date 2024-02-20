@@ -1,0 +1,83 @@
+Sistemi: 
+    un sistema è un insieme di parti connesse, interagenti fra loro in modo
+    complesso, con un grado si organizzazione tale da risultare funzionale a un obiettivo
+    pratico
+
+Variabile: 
+    le variabili sono proprietà dinamiche del sistema, ne riassumono
+    l’evoluzione temporale. Non solo di modificano da sole, ma spesso si interviene
+    forzatamente per modificare, manipolare e assoggettare a scopo di controllo del
+    componente del sistema   
+
+Parametri – costanti: 
+    i parametri sono valori intrinseci di un sistema. Sono
+    concettualmente diversi dalle variabili, in quanto dalle variabili, in quanto sono in
+    genere immutabili; il loro valore permane costante nel tempo, quantomeno se
+    osservati in un arco di tempo limitato. Non sono condizionabili, in altre parole non si
+    possono manipolare, ma anzi condizionano, nel senso che influiscono sul valore
+    assoluto della variabile. I parametri descrivono le proprietà statiche di un sistema,
+    mentre le variabili ne descrivono le proprietà dinamiche
+
+Modello matematico: 
+    dopo aver scelto le variabili, si devono individuare le loro
+    interrelazioni. Prendendo in prestito dalle varie discipline le leggi generali si
+    pervengono alla formulazione di equazioni matematiche che mettono in relazione, in
+    forma implicita o esplicita, le variabili. Lo studio dei modelli matematici dei sistemi
+    prende il menome di modellizzazione
+
+Schema a blocchi: 
+    la riduzione del sistema alle sue variabili e alle loro interrelazioni
+    conduce a una formulazione grafica che ha una caratteristica di immediatezza e
+    sintetizza il problema sotto analisi, scartando gli aspetti secondari che non rientrano
+    nell’indagine teorica. Il sistema è descritto come in una scatola nera, della quale
+    interessa conoscere il legame tra ingresso e uscita. È questa la schematizzazione a
+    blocchi orientati
+
+Sistema aperto: 
+    un sistema che ha interazioni con il mondo esterno e scambia con lo
+    stesso informazioni, mostrando quindi un comportamento dipende sia dal mondo
+    esterno sia dalle interazioni tra i sottoinsiemi dai quali è formato.
+
+Sistema chiuso: 
+    un sistema che non ha interazioni con il mondo esterno e che ha
+    quindi un comportamento dipendente esclusivamente dalle interazioni che avvengono
+    tra i sottoinsiemi dai quali è formato
+
+Sistema deterministico: 
+    un sistema si definisce deterministico se, sottoposto alle
+    stesse condizioni iniziali ed agli stessi stimoli, si comporta eventualmente allo stesso
+    modo.
+
+Sistema stocastico o casuale: 
+    un sistema si definisce stocastico se, sottoposto alle
+    stesse condizioni iniziali e agli stessi stimoli, si comporta evolvendosi in modo
+    casuale ovvero non previsto
+
+Sistema lineare: 
+    è un sistema al quale può essere applicato il principio della
+    sovrapposizione degli effetti
+
+Sistema non lineare: 
+    è un sistema al quale non può essere applicato il principio della
+    sovrapposizione degli effetti
+
+Definizione di grandezza continua
+    Una grandezza si dice continua se può assumere un valore qualsiasi all’interno di un
+    intervallo ovvero può messa in corrispondenza biunivoca con l’insieme dei numeri
+    reali
+
+Definizione di grandezza discreta
+    Una grandezza si definisce discreta se può assumere solo alcuni valori all’interno di
+    un intervallo ovvero può essere messa in corrispondenza biunivoca con un insieme
+    degli intero (insieme numerabile).
+    Sistemi continui: tutte le variabili sono continue
+
+Sistemi continui a tempo discreto: 
+    tutte le variabili sono continue tranne il tempo il
+    quale assume solo alcuni valori di solito equispaziati lungo l’intervallo di definizione
+
+Sistemi discreti: almeno una delle variabili è discreta
+
+Sistemi discreti a tempo continuo: 
+    almeno una delle variabili è discreta, ma non il
+    tempo che assume tutti i valori contenuti nell’intervallo di definizione.

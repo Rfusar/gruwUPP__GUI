@@ -1,0 +1,1 @@
+Fahrenheit to Celsuis -> tC: (tf- 32) = 100:180.

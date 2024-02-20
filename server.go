@@ -2,8 +2,8 @@ package main
 
 import (
 	"net/http"
-	"fmt"
-	"golang.org/x/net/html"
+	//"fmt"
+	//"golang.org/x/net/html"
 	
 )
 
@@ -21,6 +21,7 @@ var (
 		"/studio/informatica": studio+"/informatica.html",
 		"/studio/matematica": studio+"/matematica.html",
 		"/studio/musica": studio+"/musica.html",
+		"/studio/scuola": studio+"/scuola.html",
 		//api
 		"/api.corsi": "./static/js/corsi.json", 
 	}
@@ -43,7 +44,7 @@ func main() {
 	http.HandleFunc("/paginaSegreta2", BasicAuth(paginaSegreta2, "Accedi", UTENTE, PASSWORD))
 
 	//pagine esterne
-	resp, err := http.Get(url)
+	/*resp, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Errore durante la richiesta:", err)
 		return
@@ -58,7 +59,7 @@ func main() {
 	}
 
 	// Esempio di come puoi esplorare l'albero HTML
-	traverseHTML(doc, 0)
+	traverseHTML(doc, 0)*/
 
 	//pagine interne
 	for path, filePath := range percorsi {

@@ -120,7 +120,7 @@ func checkCredentials(username, password , UTENTE, PASSWORD string) bool {
 
 
 
-
+// pagina esterna
 func traverseHTML(node *html.Node, depth int) {
 	if node.Type == html.ElementNode {
 		indent := ""

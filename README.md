@@ -12,4 +12,5 @@
 2. visualizza la cartella */navbar* per sfruttare l'uso dei campi e renderli unici
 3. nei file *pagina.js* e *sidebar.js* manipoli i video d accesso rapido
 
-### aggiungere funzione di fare richieste http e gestirle
+### Futuri aggiormanmenti 
+1. aggiungere funzione di fare richieste http e gestirle
