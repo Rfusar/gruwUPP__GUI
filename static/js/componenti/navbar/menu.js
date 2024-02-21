@@ -3,7 +3,7 @@ function checkLINK(element, testo, path, array, document) {
 
         element.textContent = testo;
         //SOTTOMENU
-        if (path != null) { element.setAttribute("href", path) }
+        if (path != null || path == "/api.show") { element.setAttribute("href", path) }
         else {
             element.setAttribute("value", "sottomenu")
             element.style.cursor = "default"
@@ -88,7 +88,7 @@ function Sottomenu(Posizione, id, links, document, check) {
             "overflow": "hidden"
         }).forEach(([k, v]) => { sottomenu.style[k] = v })
 
-        const MENU_ = ["COMPILATORE"]
+        const MENU_ = ["ALTRE RISORSE", "COMPILATORE"]
         for (const [nomeLink, Path] of Object.entries(links)) {
             const LINK = document.createElement('a')
             LINK.textContent = nomeLink

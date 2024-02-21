@@ -7,7 +7,7 @@ const P = {
         "informatica": { "nome": "INFORMATICA", "url": "/studio/informatica" },
         "matematica": { "nome": "MATEMATICA", "url": "/studio/matematica" },
         "musica": { "nome": "MUSICA", "url": "/studio/musica" },
-        "api": {"nome": "API", "url": "/api.show"},
+        "altreRisorse": {"nome": "ALTRE RISORSE", "url": "/api.show"},
     },
     "strumenti": {
         "strumenti": "STRUMENTI",
@@ -16,7 +16,7 @@ const P = {
 
 }
 
-N_link = 4
+N_link = 5
 const LINKs = []
 for (let i = 0; i < N_link; i++) {
     let elemento = ""
@@ -28,6 +28,7 @@ for (let i = 0; i < N_link; i++) {
             break
         case 1: checkLINK(LINK, P['studio']['studio'], null, LINKs, null); break
         case 2: checkLINK(LINK, P['strumenti']['strumenti'], null, LINKs, null); break
+        case 2: checkLINK(LINK, P['strumenti']['strumenti'], "/api.show", LINKs, null); break
         case 3: checkLINK(LINK, P['home']['nome'], P['home']['url'], LINKs, null); break
 
         default: console.error("AIA, qualcosa è andato male")
@@ -36,17 +37,14 @@ for (let i = 0; i < N_link; i++) {
 for (const LINK of LINKs) { nav.append(LINK) }
 
 
-
-const STYLE_nav = {
-    "display": "flex",
-    "flexDirection": "row",
-    "justifyContent": "space-around",
-    "height": "8vh",
-    "backgroundColor": "#60d168",
-    "borderRadius": "0px 0px 10px 0px",
-}
-Object.entries(STYLE_nav).forEach(([k,v])=>{nav.style[k] = v})
-
+Object.assign(nav.style, {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    height: "8vh",
+    backgroundColor: "#60d168",
+    borderRadius: "0px 0px 10px 0px",
+})
 document.body.insertBefore(nav, document.body.firstChild)
 
 //CREAZIONE SOTTOMENU
@@ -67,14 +65,12 @@ nav.childNodes.forEach(child => {
                     Links[P['studio']['informatica']['nome']] = P['studio']['informatica']['url'],
                         Links[P['studio']['matematica']['nome']] = P['studio']['matematica']['url'],
                         Links[P['studio']['musica']['nome']] = P['studio']['musica']['url'],
-                        Links[P['studio']['api']['nome']] = P['studio']['api']['url']
+                        Links[P['studio']['altreRisorse']['nome']] = P['studio']['altreRisorse']['url']
                     break
                 case P['strumenti']['strumenti']:
                     Links[P['strumenti']['compilatore']['nome']] = P['strumenti']['compilatore']['url']
                     break
             }
-            console.log(Links)
-
             child.classList.add("menu")
             Sottomenu(Posizione, child.textContent, Links, document, check)
             const Posizioni_oggetti = []

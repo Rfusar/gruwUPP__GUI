@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-studio</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="lavoro">
+            <h1 style="color:red">Lavoro</h1>
+        </div>
+        <div id="scuola">
+            <h1 style="color:red">Scuola</h1>
+        </div>
+    </main>
+
+    <script>
+        //*Set body
+        Object.assign(document.body.style, {
+            margin: 0,
+            padding: "20px",
+            color: "white",
+            backgroundColor: "black",
+        })
+        const main = document.getElementsByTagName('main')[0]
+        Object.assign(main.style, {
+            display: "grid",
+            gridTemplateColumns: "auto auto"
+        })
+
+        const stile = {
+            display: "flex",
+            padding: "0 30px 30px 30px",
+            flexDirection: "column",
+            border: ".5px solid white",
+        }
+
+        const lavoro = document.querySelector('#lavoro')
+        const scuola = document.querySelector('#scuola')
+        new Array(lavoro, scuola).forEach(e=>Object.assign(e.style, stile))
+
+        const titoli_link = {
+            'lavoro_levelUp': "api.corsi",
+            'paginaScuola': "studio/scuola",
+            'appunti_italiano': "api.italiano",
+            'appunti_storia': "api.storia",
+            'appunti_telecomunicazioni': "api.telecomunicazioni",
+            'appunti_formule': "api.formule",
+        }
+
+        for (const [k, v] of Object.entries(titoli_link)) {
+            const a = document.createElement('a')
+            a.textContent = k
+            a.href = v
+            a.style.color = "yellow"
+            a.style.marginBottom = "15px"
+            a.setAttribute('target', '_blank')
+            k == "lavoro_levelUp" ? lavoro.append(a) : scuola.append(a)
+            
+        }
+    </script>
+</body>
+
+</html>

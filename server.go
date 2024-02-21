@@ -20,14 +20,19 @@ var (
 
     percorsi = map[string]string{
 		"/": "./static/index.html",
-		//studio
+		//& HTML
 		"/studio/informatica": studio+"/informatica.html",
 		"/studio/matematica": studio+"/matematica.html",
 		"/studio/musica": studio+"/musica.html",
+		//*GrandiScuole
 		"/studio/scuola": studio+"/scuola.html",
-		//api
-		"/api.show": api+"/pathAPI.txt",
+		//*API info
+		"/api.show": percorso+"/API.html",
+		
+		//& Altro
+		//*Informatica
 		"/api.corsi": api+"/corsi.json", 
+		//*Scuola
 		"/api.italiano": scuola+"/italiano/narrativa.txt",
 		"/api.storia": scuola+"/storia/roma.txt",
 		"/api.telecomunicazioni": scuola+"/telecomunicazioni/sistemi.txt",
