@@ -15,6 +15,9 @@ var (
 	percorso = "./static/pagineHTML"
 	studio = percorso+"/studio"
 
+	api = "./static/js"
+	scuola = api+"/pagine/scuola/appunti"
+
     percorsi = map[string]string{
 		"/": "./static/index.html",
 		//studio
@@ -23,7 +26,12 @@ var (
 		"/studio/musica": studio+"/musica.html",
 		"/studio/scuola": studio+"/scuola.html",
 		//api
-		"/api.corsi": "./static/js/corsi.json", 
+		"/api.show": api+"/pathAPI.txt",
+		"/api.corsi": api+"/corsi.json", 
+		"/api.italiano": scuola+"/italiano/narrativa.txt",
+		"/api.storia": scuola+"/storia/roma.txt",
+		"/api.telecomunicazioni": scuola+"/telecomunicazioni/sistemi.txt",
+		"/api.formule": scuola+"/formule.txt",
 	}
 )
 

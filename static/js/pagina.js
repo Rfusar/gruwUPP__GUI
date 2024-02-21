@@ -40,7 +40,7 @@ new Array(front_end, back_end).forEach(e => {
                 //Javascript
                 "https://www.youtube.com/embed/vDDjtwQDw2k?si=7YmD4dmKcow1Ppz7",
                 //VScode 
-                
+                "",
                 //javascript ++
                 "https://www.youtube.com/embed/videoseries?si=mb4tA-iD9xzy1H7R&amp;list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd"
             ]

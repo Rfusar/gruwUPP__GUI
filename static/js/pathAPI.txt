@@ -1,0 +1,8 @@
+/api.corsi                  -> Visualizza tutti i corsi d'informatica
+
+### SCUOLA 
+
+/api.italiano               -> Visualizza le lezioni d'italiano
+/api.storia                 -> Visualizza le lezioni di storia
+/api.telecomunicazioni      -> Visualizza le lezioni di telecomunicazioni
+/api.formule                -> Visualizza formule

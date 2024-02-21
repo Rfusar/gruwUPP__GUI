@@ -1,12 +1,14 @@
-Object.entries({
-    "margin": 0,
-    "padding": 0
-}).forEach(([k, v])=>document.body.style[k] = v)
+Object.assign(document.body.style, {
+    margin: 0,
+    padding: 0,
+    color: "white",
+    backgroundColor: "black"
+})
 
 //*CORSI NETTUNO
 const divNettuno = document.createElement('div')
 divNettuno.style.display = "flex"
-divNettuno.style.border = ".5px solid black"
+divNettuno.style.border = ".5px solid white"
 divNettuno.style.justifyContent = "space-around"
 
 const titoloNettuno = document.createElement('h1')
@@ -24,6 +26,7 @@ Object.entries({
     a.textContent = k
     a.href = v
     a.target = "_blank"
+    a.style.color = "yellow"
     li.append(a)
     ul.append(li)
 })
@@ -61,6 +64,7 @@ const links = Object.entries({
     a.textContent = k;
     a.href = v;
     a.target = "_blank";
+    a.style.color = "yellow"
     return a;
 });
 

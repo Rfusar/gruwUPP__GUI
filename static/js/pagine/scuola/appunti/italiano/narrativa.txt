@@ -40,3 +40,135 @@ tecniche e strutture
     è il verso nel quale l'accento principale si trova seulla decima sellaba metrica. 
     Tuttavia di norma gli endecasillabi presentano un accento fisso o sulla quarta o sulla sesta sede
     È il metro principale della poesia italiana e si trova in tutte le formazioni più importanti, come la ballata, la canzone, il sonetto, l'ottava
+
+
+
+
+
+
+
+### ROMANZO
+è un genere della narrativa in prosa, origine +/- dal XI d.C veniva indicato come roman,
+in generale raccontavano storie cavalleresche 
+Il romanzo è dunque caratterizzato da una struttura della storia più o meno complessa e da una varietà
+di personaggi più o meno ampia. Questa profonda articolazione ha dato vita a numerosi sottogeneri: si
+passa dal genere storico al fantastico, dal giallo al romanzo epistolare.
+
+-storia:
+    Forme primordiali di romanzo sono state rintracciate già duemila
+    anni prima di Cristo in Egitto appartenenti al filone fantastico, 
+    sentimentale, politico, satirico
+
+    Le prime tracce di questo genere letterario si trovano in età classica: nel mondo greco il primo
+    romanzo fu il romanzo di Nino, di autore sconosciuto, databile non più tardi del I sec. a.C. che tratta
+    dell’amore del re assiro Nino innamorato della cugina Semiramide
+
+    Specialmente in età ellenistica infatti i gusti letterari tesero a narrazioni di vario genere, dall'epico al
+    mitologico, dall'umano al fantastico, caratterizzate da una lunghezza piuttosto limitata a dispetto della
+    tradizione omerica
+
+    Al periodo ellenistico risalgono i romanzi di Senofonte Efesio e di Longo Sofista, autore di Gli amori
+    pastorali di Dafni e Cloe, II sec. d.C.
+
+    Anche in Cina, intorno al XIV secolo il romanzo diventa un genere popolare ed intorno al XVI secolo
+    viene prodotto il famoso Chin P'ing Mei
+
+    Negli anni che vanno dal XVI secolo al XVII secolo materia della narrazione è il romanzo verosimile
+    e il romanzo si trova in una posizione intermedia tra storia ed epica
+
+    Il primo vero romanzo di questo
+    periodo è da considerarsi il Don Chisciotte che, grazie alla sua forma che demistifica la tradizione
+    cavalleresca e cortese, rappresenta la prima opera letteraria classificabile come "romanzo"
+    nell'accezione moderna del termine. Ma è solo alla fine del XVII secolo che l'idea di fiction prende
+    piede nella produzione letteraria e così il romanzo comincia a prendere forma e a guadagnare uno
+    spazio tra i generi letterari. 
+
+    Fu caratteristico del XVII secolo il nascere e diffondersi, soprattutto in Francia, del romanzo, cioè di
+    una letteratura narrativa di ampiezza e complessità assai maggiori della novella e destinata alla lettura,
+    più amena e di svago che letteraria, di un largo pubblico.
+
+    I moralisti dell'epoca lo ostacolarono per lungo tempo (un'ordinanza settecentesca della corona di
+    Spagna, che agiva in pieno accordo con la Chiesa, proibiva la diffusione dei romanzi in tutte le colonie
+    americane a causa della vacuità, della presunta dannosità per i costumi del nuovo genere letterario). 
+
+    In realtà i primi veri romanzi sono da attribuire alla prima metà del XVIII secolo. Essi si volgono nella
+    direzione dell'epistolario e delle memorie dove la forma narrativa che viene adottata in prevalenza,
+    diventa quella che tende di più all'autenticità e alla verosimiglianza.
+    Verso la fine del secolo si sviluppa un altro filone tematico che è quello del libertinaggio, che segna
+    una tappa importante nella storia del romanzo settecentesco.
+    Così rivendicata la qualità del nuovo genere, appare in Inghilterra una nuova fase di rottura e un punto
+    insieme di arrivo e di partenza per tutta la storia letteraria europea
+
+    Grande fortuna ha anche il genere del romanzo storico, rappresentato in italiano dal capolavoro di
+    Alessandro Manzoni I promessi sposi. Nell'Italia del XVIII secolo il romanzo ha una vita stentata, sia
+    per ragioni storico-sociologiche, sia per ragioni teorico-estetiche che portavano a guardare con
+    diffidenza a una forma narrativa così diversa da quella tradizionale
+
+    Quello che cambia in tutta Europa agli inizi del XIX secolo è l'intera società: l'avvento della borghesia
+    e del nazionalismo, di spinte rinnovatrici, catalizza nel romanzo le inquietudini di un'intera epoca, con
+    accenti diversi a seconda del Paese interessato: piace ai lettori dell'epoca il tema dello sviluppo
+    dell'individuo. Gli argomenti-cardine di tutta la narrativa realistica sono la famiglia, le vicende e i
+    rapporti che si realizzano al suo interno e che influenzeranno tutta la letteratura sia in Francia che fuori
+
+    Alla fine del XIX secolo nascerà il romanzo sperimentale (Le roman expérimental, E.Zola, 1880). Il
+    naturalismo francese influenzerà in Italia il Verismo (Giovanni Verga, Matilde Serao, Grazia
+    Deledda). Il romanzo è, a questo punto, un genere conosciuto e rispettato, almeno nelle sue espressioni
+    più elevate (i "classici"): con il Novecento la forma del romanzo, e più in generale l'intera cultura, è
+    "investita da un vero turbine". Appaiono all'orizzonte culturale e filosofico la psicoanalisi (Italo
+    Svevo), la logica, la linguistica, e anche la tecnica narrativa cerca di adeguarsi.
+    Dopo aver cercato rifugio nella rappresentazione di classi subalterne (Verismo) oppure di classi alte, il
+    romanzo non può più essere basato sulla relatività ed esso modifica la sua struttura: la trama spesso
+    scompare, non esiste necessariamente una relazione tra la rappresentazione spaziale e l'ambiente,
+    all'andamento cronologico si sostituisce un dissolvimento del percorso temporale e nasce un nuovo
+    rapporto tra il tempo e l'intreccio. Cambia anche la tipologia del personaggio. Termina il mito dell'eroe
+    che viene sostituito dai nuovi antieroi i cui tratti principali sono il senso di frustrazione, la perdita della
+    propria identità, la mancanza di unità psichica, la sensazione di non essere autentici. I protagonisti
+    sono gli inetti, gli uomini, appunto, senza qualità alcuna, gli ammalati fisici e psichici, dei quali spesso
+    si mette in scena l'inutilità dell'azione e della parola.
+    I problemi per il romanzo del Novecento sono ancora quelli della voce narrante, e al narratore che
+    presenta il punto di vista dominante. 
+
+
+
+
+
+### ROMANZO STORICO
+
+    un romanzo si definisce storico quando "è ambientato in un'epoca storica e intende trasmetterne lo spirito,
+    i comportamenti e le condizioni sociali attraverso dettagli realistici e con un'aderenza (in molti casi
+    solo apparente) ai fatti documentati. Può contenere personaggi realmente esistiti, oppure una
+    mescolanza di personaggi storici e di invenzione"
+
+    Il romanzo storico, genere tipicamente romantico, nacque e conobbe una grande espansione durante
+    l'Ottocento. In quel secolo la narrativa conquistò una posizione preminente sulle altre forme letterarie;
+    la narrativa di ambientazione storica in particolare ricevette un forte impulso da una serie di fattori. La
+    crescente affermazione del pensiero e del metodo scientifico favorì il rinnovamento degli studi storici
+    e un accresciuto interesse per le discipline storiche
+
+    Il romanticismo e i sentimenti nazionalisti fecero
+    leva sulla rievocazione della passata grandezza dei popoli e accrebbero il senso storico degli scrittori; i
+    rivoluzionari accadimenti storico-politici del secolo si nutrirono così di una narrativa in grado di
+    fornire figure esemplari del passato alle quali ispirarsi.
+    Waverley dello scrittore scozzese Walter Scott, pubblicato nel 1814, è considerato il capostipite del
+    romanzo storico
+
+    # Alesssandro Manzoni
+
+        L'anno fondamentale per il romanzo storico in Italia fu il 1827: fu allora che Alessandro Manzoni
+        concluse la prima versione, chiamata appunto ventisettana (la seconda, e definitiva, è del 1840) del suo
+        capolavoro ambientato nella Milano del Seicento, dopo essersi a lungo documentato partendo dalla
+        Historia Patria dello storico milanese Giuseppe Ripamonti e dopo aver attentamente riflettuto sulle
+        caratteristiche e sugli scopi del genere letterario che si accingeva ad affrontare (anni dopo, nel 1845, lo
+        scrittore diede anche alle stampe il saggio Del romanzo storico ed in genere de' componimenti misti di
+        storia e invenzione)
+
+        Manzoni conosceva i romanzi di Scott e la lettura di Ivanhoe gli era stata di ispirazione già per Adelchi
+        (tragedia ambientata al tempo della discesa in Italia di Carlo Magno), ma tra i due scrittori vi è una
+        grande differenza. Infatti, mentre l'opera di Scott aveva il principale intento di appassionare e divertire
+        il lettore, Manzoni fece de I promessi sposi un romanzo a tesi storica, religiosa, morale;
+
+        Con questi accorgimenti l'autore intende rinsaldare il 'patto' di fiducia con il lettore,
+        rassicurandolo sulla verosimiglianza dei fatti narrati. In ogni modo, ne I promessi sposi le vicende di
+        pura invenzione si intrecciano senza stridori, anzi si armonizzano perfettamente con i fatti storici
+        avvenuti nel milanese tra il 1628 e il 1630 (carestia, tumulto di San Martino, guerra per la successione
+        al Ducato di Mantova, calata dei Lanzichenecchi, peste del 1630).

@@ -48,7 +48,14 @@ const materie = [
     },
     {
         "Tecnologia - disegno tecnico": [
-            "https://www.youtube.com/embed/videoseries?si=LwAAOTrXWSfZeIMZ&amp;list=PLa_FM61U8MoTi3R3kf8uJUfpKqDCe7Gdv"
+            "https://www.youtube.com/embed/videoseries?si=LwAAOTrXWSfZeIMZ&amp;list=PLa_FM61U8MoTi3R3kf8uJUfpKqDCe7Gdv",
+            "https://www.youtube.com/embed/videoseries?si=UjEga_OQR5wvmqpF&amp;list=PL2bgZ9Ap_Y3rgn1Z9c-vSqKNjhcFlRpOI"
+        ],
+
+    },
+    {
+        "Matematica": [
+            "https://www.youtube.com/embed/videoseries?si=zY1W-ocY5vNt6YKW&amp;list=PLpkXLf6Zhdx0LEJW8B4XYJPkXK4rue3th"
         ]
     }
 ]

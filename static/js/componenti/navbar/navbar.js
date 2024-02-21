@@ -7,6 +7,7 @@ const P = {
         "informatica": { "nome": "INFORMATICA", "url": "/studio/informatica" },
         "matematica": { "nome": "MATEMATICA", "url": "/studio/matematica" },
         "musica": { "nome": "MUSICA", "url": "/studio/musica" },
+        "api": {"nome": "API", "url": "/api.show"},
     },
     "strumenti": {
         "strumenti": "STRUMENTI",
@@ -65,12 +66,15 @@ nav.childNodes.forEach(child => {
                 case P['studio']['studio']:
                     Links[P['studio']['informatica']['nome']] = P['studio']['informatica']['url'],
                         Links[P['studio']['matematica']['nome']] = P['studio']['matematica']['url'],
-                        Links[P['studio']['musica']['nome']] = P['studio']['musica']['url']
+                        Links[P['studio']['musica']['nome']] = P['studio']['musica']['url'],
+                        Links[P['studio']['api']['nome']] = P['studio']['api']['url']
                     break
                 case P['strumenti']['strumenti']:
                     Links[P['strumenti']['compilatore']['nome']] = P['strumenti']['compilatore']['url']
                     break
             }
+            console.log(Links)
+
             child.classList.add("menu")
             Sottomenu(Posizione, child.textContent, Links, document, check)
             const Posizioni_oggetti = []

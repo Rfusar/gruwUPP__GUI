@@ -88,7 +88,7 @@ function Sottomenu(Posizione, id, links, document, check) {
             "overflow": "hidden"
         }).forEach(([k, v]) => { sottomenu.style[k] = v })
 
-        const MENU_ = ["SALUTE", "PASTIGLIE", "MAILGUN", "ZOHO", "COMPILATORE"]
+        const MENU_ = ["COMPILATORE"]
         for (const [nomeLink, Path] of Object.entries(links)) {
             const LINK = document.createElement('a')
             LINK.textContent = nomeLink
