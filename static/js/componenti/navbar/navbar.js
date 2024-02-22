@@ -7,7 +7,7 @@ const P = {
         "informatica": { "nome": "INFORMATICA", "url": "/studio/informatica" },
         "matematica": { "nome": "MATEMATICA", "url": "/studio/matematica" },
         "musica": { "nome": "MUSICA", "url": "/studio/musica" },
-        "altreRisorse": {"nome": "ALTRE RISORSE", "url": "/api.show"},
+        "altreRisorse": {"nome": "ALTRE RISORSE", "url": "/studio/scuola"},
     },
     "strumenti": {
         "strumenti": "STRUMENTI",
@@ -16,7 +16,7 @@ const P = {
 
 }
 
-N_link = 5
+N_link = 4
 const LINKs = []
 for (let i = 0; i < N_link; i++) {
     let elemento = ""
@@ -28,7 +28,6 @@ for (let i = 0; i < N_link; i++) {
             break
         case 1: checkLINK(LINK, P['studio']['studio'], null, LINKs, null); break
         case 2: checkLINK(LINK, P['strumenti']['strumenti'], null, LINKs, null); break
-        case 2: checkLINK(LINK, P['strumenti']['strumenti'], "/api.show", LINKs, null); break
         case 3: checkLINK(LINK, P['home']['nome'], P['home']['url'], LINKs, null); break
 
         default: console.error("AIA, qualcosa è andato male")

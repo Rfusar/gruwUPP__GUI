@@ -81,3 +81,77 @@ Sistemi discreti: almeno una delle variabili è discreta
 Sistemi discreti a tempo continuo: 
     almeno una delle variabili è discreta, ma non il
     tempo che assume tutti i valori contenuti nell’intervallo di definizione.
+
+
+
+### ERRORI DI TRASMISSIONE
+
+- codifica di canale 
+    serve a garantirela certezza della trasmissione e consiste nell'aggiungere ai dati inviati dal mittente 
+    un certo numero di bit ridondanti, utile per il sincronismo o per rilevare errore di trasmissione
+    il controllo dell'errore si basa su codici di ridondanza che aggiungono dei bit all'unita informativa 
+    da trasmettere per verificare la correttezza in ricezione
+
+- codici rilevatori
+    dichiarano la presenza, ma non la posizione degli errori nella sequanza di bit, il ricevitore puo richiedere la ritrasmissione
+
+- codici correttori
+    in grado di rilevare una o più posizioni errate e quindi di correggerle
+    per semplice inversione del bit senza che l’applicazione se ne accorga 
+
+- Distanza di Humming
+    Date due code word valide, si definisce distanza di Humming tra esse il numero di bit
+    di cui differiscono.
+    La distanza di Humming di un codice è quella minima tra tutte le coppie di code word
+    ammesse.
+    I codici di parità sono quelli in cui la distanza minima di Humming è 2 e sono quindi in
+    grado di rilevare un errore singolo o, più in generale, rilevano l’occorrenza di un numero
+    dispari di errori
+
+
+### Segnale binario
+
+    Un segnale binario è, quindi, sostanzialmente un segnale teorico con forma d’onda
+    quadra; nella realtà, ogni segnale fisico è soggetto all’influenza del rumore e, inoltre,
+    fronti di salita e fronti di discesa perfettamente verticali non sono fisicamente ottenibili.
+    Ora si definiscono i parametri: rise time, fall time, width.
+    Si definisce rise time tr
+    (tempo di salita) il tempo che impiega il segnale per andare dal
+    10% al 90% dell’esecuzione massima possibile della grandezza fisica.
+    Si definisce fall time tf (tempo di discesa) il tempo che impiega il segnale per andare
+    dal 90% al 10% dell’esecuzione massima possibile della grandezza fisica.
+    Si definisce width (durata) il tempo che intercorre tra due consecutivi attraversamenti,
+    da parte del segnale, dal livello relativo al 50% dell’esecuzione massima possibile per il
+    segnale fisico.
+    Il segnale analogico è un segnale in cui è significativo ogni valore assunto nel tempo
+    dalla grandezza fisica che reca l’informazione; di conseguenza, al variare del valore
+    della grandezza, cambia il significato dell’informazione ad essa associata. Si definisce
+    periodo un segnale che, dopo un certo intervallo di tempo, torna a ripetersi ancora
+    uguale. Si definisce frequenza è il numero di cicli compiuti dal segnale nell’unità di
+    tempo. Si definisce valore di picco o valore massimo il massimo valore raggiunto dal
+    segnale, mentre si definisce valore minimo il minimo valore raggiunto dal segnale. La
+    funzione del segnale analogico è v(t) = A sen(ωt + φ). 
+
+
+    - porte logiche -> approfondire
+
+
+### OS 
+    Il sistema operativo è il gestore delle risorse del calcolatore, cioè il software di base
+    che serve all’utente per lavorare con l’hardware
+
+    - sistemi operativi mono programmati
+        gestiscono sistemi di elaborazione nei quali è possibili eseguire un solo programma alla volta e, quindi, tutte le
+        risorse sono costantemente dedicate ad esso;
+        sistemi operativi multi programmati: gestiscono sistemi di elaborazione in grado di far “eseguire” più programmi contemporaneamente
+
+    - sistemi operativi batch: 
+        vengono utilizzati per applicazioni che richiedono un’elaborazione complessa e non hanno bisogno di dialogare con l’utente;
+
+    - sistemi operativi time – sharing 
+        al fine di ridurre i tempi di attesa dei programmi in esecuzione, il sistema decide di assegnare tempi predefiniti e
+        uguale per tutti per l’utilizzo del processore. In questo modo, ogni utente vede
+        “avanzare” il proprio programma, e ha l’impressione di avere a propria disposizione l’intero sistema;
+
+    - sistemi operativi real – time
+        prevedono un dialogo continuo tra l’utente e il sistema generalmente in tempi molto brevi. 

@@ -8,7 +8,10 @@ video vecchi -> da uno si vedeva 2014 --- quindi ---> tutti vecchi
 *** video lezioni su contenuti che si poteva evitare mancanza di video dove necessita(esempio -> divisione polinomi)
 
 ordine sparso -> esempio matematica prima di affrntare l'equazioni mi viene spigato cosa è un numero complesso e le varie operazioni 
-con uso pure in trigonometria con cos e sen
+con uso pure in trigonometria con cos e sen, gli archi modulo...
+poi alla lazione 5 mi spiega cosa è un numero razionale...
+
+
 
 errori di scrittura un po ovunque
 
@@ -19,5 +22,9 @@ audio pessimo
 
 *** lezioni di TECNOLOGIE E TECNICHE DI RAPPRESENTAZIONE GRAFICA
     incomprensibili
+
+link scienze motorie e sportive - 5 
+    ->map-> NON SI APRE
+    -> test -> voglio vedere le policy del sito non mi trova la pagina
 
 
