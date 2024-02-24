@@ -2,8 +2,6 @@ package main
 
 import (
 	"net/http"
-	//"fmt"
-	//"golang.org/x/net/html"
 	
 )
 
@@ -56,25 +54,8 @@ func main() {
 	http.HandleFunc("/paginaSegreta1", BasicAuth(paginaSegreta1, "Accedi", UTENTE, PASSWORD))
 	http.HandleFunc("/paginaSegreta2", BasicAuth(paginaSegreta2, "Accedi", UTENTE, PASSWORD))
 
-	//pagine esterne
-	/*resp, err := http.Get(url)
-	if err != nil {
-		fmt.Println("Errore durante la richiesta:", err)
-		return
-	}
-	defer resp.Body.Close()
 
-	// Analizza il corpo della risposta HTML
-	doc, err := html.Parse(resp.Body)
-	if err != nil {
-		fmt.Println("Errore durante l'analisi dell'HTML:", err)
-		return
-	}
-
-	// Esempio di come puoi esplorare l'albero HTML
-	traverseHTML(doc, 0)*/
-
-	//pagine interne
+	//pagine
 	for path, filePath := range percorsi {
 		path := path; filePath := filePath 
 		http.HandleFunc(path, func(w http.ResponseWriter, r *http.Request) {

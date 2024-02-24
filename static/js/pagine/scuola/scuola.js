@@ -1,5 +1,6 @@
 //& DATI
 const materie_con_redirect = {
+    "ESERCIZI INGLESE": "https://www.esercizinglese.com/",
     "analisi grammaticale": "https://youtube.com/playlist?list=PLdIQC7oepumhoYpBBYm2hQMywZYj4Iu8M&si=iOBSPci-i9hZxE1c",
     "analisi logica": "https://youtube.com/playlist?list=PLdIQC7oepumiphdQH4iYNqTQlHRwUiYk2&si=Fs8acdGcL6nkGv0I",
     "analisi del periodo": "https://youtube.com/playlist?list=PLdIQC7oepumjZ5_wDdCVlOR63YwnWjPlq&si=177w72RHggri4OcQ",
@@ -11,14 +12,15 @@ const materie_con_redirect = {
 const materie_card =
 {
     "Storia": [
-        "https://www.youtube.com/embed/QcVp3abb5CU?si=xWXSMGyTykFZIqPi",
-        "https://www.youtube.com/embed/videoseries?si=P3zYJNWO-H-76qVx&amp;list=PL3tW0_opmMY29g28bgEgBSANDEFg_rRjw",
+        "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
         "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x"
     ],
     "Geografia": [
         "https://www.youtube.com/embed/videoseries?si=EnuRP2ifOlber2eG&amp;list=PLsLBNKs3-0324idL6TOSvYNVRr6V7R1H7"
     ],
     "Italiano": [
+        "https://www.youtube.com/embed/yv1Az2vsHLk?si=jKohWxRnbgbxTe1t",
+        "https://www.youtube.com/embed/BPHbSAXXMkQ?si=MZPqt5LiuQMfwh2r",
         "https://www.youtube.com/embed/videoseries?si=aT1R69GxWWlaj3gQ&amp;list=PL8aY1TW4q-N76JJrIJreN_q36yF6WfZ6E"
     ],
     "Inglese": [
@@ -43,16 +45,21 @@ const materie_card =
         "https://www.youtube.com/embed/videoseries?si=UjEga_OQR5wvmqpF&amp;list=PL2bgZ9Ap_Y3rgn1Z9c-vSqKNjhcFlRpOI"
     ],
     "Matematica": [
-        "https://www.youtube.com/embed/videoseries?si=zY1W-ocY5vNt6YKW&amp;list=PLpkXLf6Zhdx0LEJW8B4XYJPkXK4rue3th"
+        "https://www.youtube.com/embed/videoseries?si=zY1W-ocY5vNt6YKW&amp;list=PLpkXLf6Zhdx0LEJW8B4XYJPkXK4rue3th",
+        "https://www.youtube.com/embed/videoseries?si=uwPFzzahYPh_WFej&amp;list=PLNMxMkuOUGw_s9ND_xYjcWCBo2QtWOfNS",
+
     ]
 }
 
+document.body.style.backgroundColor = "black" 
+document.body.style.color = "white" 
 
 //& link con redirect
 const links_con_redirect= document.getElementsByTagName('div')[0]
 Object.assign(links_con_redirect.style, {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
+    width: "max-content"
 })
 for(const [k, v] of Object.entries(materie_con_redirect)){
     const a = document.createElement('a')
@@ -81,8 +88,10 @@ for (const card of Object.keys(materie_card)) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        boxShadow: "2px 4px 10px gray",
-        cursor: "pointer"
+        boxShadow: "2px 4px 10px blue",
+        cursor: "pointer",
+        backgroundColor: "grey",
+        color: "black"
     })
     div.setAttribute("attivo", false)
     //*evento mouseover
@@ -111,12 +120,15 @@ document.querySelectorAll('.card').forEach(e => {
         })
         const btn = document.createElement('button')
         btn.id = "btn"
-        btn.textContent = "Torna indietro"
+        btn.textContent = "GO BACK"
         Object.assign(btn.style, {
             position: "absolute",
             top: "10px",
             right: "10px",
-            fontSize: "50px"
+            fontSize: "50px",
+            padding: "5px",
+            cursor: "pointer"
+
         })
         btn.addEventListener('click', () => {
             while (main_cardAperta.firstChild) { main_cardAperta.removeChild(main_cardAperta.firstChild)}

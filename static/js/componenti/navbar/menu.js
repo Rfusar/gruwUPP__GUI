@@ -21,17 +21,19 @@ function checkLINK(element, testo, path, array, document) {
     }
     //*FUTURO SEARCH-INPUT 
     else if (element.nodeName.toLowerCase() === 'input') {
-        Object.entries({
-            "border": "none",
-            "marginLeft": ".8rem",
-            "backgroundColor": "rgba(250, 250, 250, 0.7)",
-            "borderBottom": "2px solid blue",
-            "outline": "none",
-            "marginTop": "1rem",
-            "height": "25px",
-            "fontSize": "18px"
-        }).forEach(([k, v]) => { element.style[k] = v })
+        Object.assign(element.style, {
+            border: "none",
+            marginLeft: ".8rem",
+            backgroundColor: "rgba(250, 250, 250, 0.7)",
+            borderBottom: "2px solid blue",
+            outline: "none",
+            marginTop: "1rem",
+            height: "25px",
+            fontSize: "18px"
+        })
         element.placeholder = "Cerca..."
+        element.setAttribute('list', 'materie')
+
 
         //ANIMAZIONE
         const RADIUS_MAX = 28
@@ -61,9 +63,11 @@ function checkLINK(element, testo, path, array, document) {
             }, 30);
         });
 
+        const DIZIONARIO = async () => { const res = await fetch("/api.corsi"); return await res.json() }
+
         array.push(element)
 
-        barraDiRicerca(element, document)
+        barraDiRicerca(element, document, DIZIONARIO)
 
     }
 
@@ -123,59 +127,6 @@ function rimuoviEventiMousemove(document) {
     } catch { }
 }
 
-
-function barraDiRicerca(barra, document) {
-    const div = document.createElement('div')
-
-    async function DIZIONARIO() { const res = await fetch("/api.corsi"); return await res.json() }
-
-    barra.addEventListener('input', async (event) => {
-        Object.entries(await DIZIONARIO())
-            .map(([k, v]) => {
-                k.includes(event.target.value) && event.target.value != ""
-                    ? obj = { "key": k, "value": v }
-                    : obj = null;
-                return obj
-            })
-            .filter(e => e != null)
-            .map(e => {
-                const a = document.createElement('a')
-                a.textContent = e['key']
-                a.href = e['value']
-                a.target = "_blank"
-                a.style.color = "black"
-                a.style.textDecoration = "none"
-                a.style.margin = "2px 10px"
-                return a
-            })
-            .forEach((e, i) => {
-                i < div.children.length
-                    ? div.replaceChild(e, div.children[i])
-                    : div.append(e)
-            })
-        const SEARCH = document.body.childNodes[0].childNodes[0]
-        const Style_DIV = {
-            "display": "flex",
-            "flexDirection": "column",
-            "position": "absolute",
-            "left": `${SEARCH.getBoundingClientRect().left}px`,
-            "right": `${SEARCH.getBoundingClientRect().right}px`,
-            "top": `${SEARCH.getBoundingClientRect().bottom + 5}px`,
-            "width": "max-content",
-            "backgroundColor": "white",
-            "color": "black",
-            "overflow": "hidden",
-            "borderRadius": "0px 0px 5px 5px"
-        }
-        Object.entries(Style_DIV).forEach(([k, v]) => { div.style[k] = v })
-
-        document.body.append(div)
-
-        event.target.value.length != 0
-            ? div.animate(Animazione(div, true)["keyframes"], Animazione(div, true)["options"])
-            : div.animate(Animazione(div, false)["keyframes"], Animazione(div, false)["options"])
-    })
-}
 function Animazione(div, valore) {
     div.getAnimations().forEach(e => e.cancel());
     const altezzaMassima = div.offsetHeight;
@@ -200,4 +151,19 @@ function Animazione(div, valore) {
         "keyframes": keyframes,
         "options": options
     }
+}
+async function barraDiRicerca(barra, document, DIZIONARIO) {
+    const datalist = document.createElement('datalist')
+    datalist.id = "materie"
+    for (const [k, v] of Object.entries(await DIZIONARIO())) {
+        const option = document.createElement('option')
+        option.textContent = k
+        option.value = v
+        datalist.append(option)
+    }
+    barra.addEventListener('blur', function () {
+        if (barra.value != "") { window.open(barra.value, "_blank") }
+    })
+    barra.addEventListener('focus', () => { barra.value = "" })
+    barra.insertAdjacentElement("afterend", datalist)
 }
