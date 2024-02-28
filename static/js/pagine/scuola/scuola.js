@@ -1,33 +1,35 @@
 //& DATI
 const materie_con_redirect = {
     "ESERCIZI INGLESE": "https://www.esercizinglese.com/",
+    "verbi_irregolari": "https://verbi-irregolari-inglese.it/",
     "analisi grammaticale": "https://youtube.com/playlist?list=PLdIQC7oepumhoYpBBYm2hQMywZYj4Iu8M&si=iOBSPci-i9hZxE1c",
     "analisi logica": "https://youtube.com/playlist?list=PLdIQC7oepumiphdQH4iYNqTQlHRwUiYk2&si=Fs8acdGcL6nkGv0I",
     "analisi del periodo": "https://youtube.com/playlist?list=PLdIQC7oepumjZ5_wDdCVlOR63YwnWjPlq&si=177w72RHggri4OcQ",
-    "medioevo": "https://youtube.com/playlist?list=PLPomx3BVUwcX5bi57wx_4gStaOjqw2hnq&si=U5VmJHBzZAQ495VS",
     "APPUNTI": "http://127.0.0.1:8080/api.show"
 }
 
 
-const materie_card =
-{
+const materie_card = {
     "Storia": [
         "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
-        "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x"
+        "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x",
+        "https://www.youtube.com/embed/videoseries?si=LqiTERf7RxOa8Fl2&amp;list=PLZCOAUvuJXW8LxZDhF1nCBdNliQiRu1WK",
+        "https://www.youtube.com/embed/xBaHMmo_f8U?si=FvVWNTQyMltcn43a"
     ],
     "Geografia": [
         "https://www.youtube.com/embed/videoseries?si=EnuRP2ifOlber2eG&amp;list=PLsLBNKs3-0324idL6TOSvYNVRr6V7R1H7"
     ],
     "Italiano": [
         "https://www.youtube.com/embed/yv1Az2vsHLk?si=jKohWxRnbgbxTe1t",
-        "https://www.youtube.com/embed/BPHbSAXXMkQ?si=MZPqt5LiuQMfwh2r",
+        "https://www.youtube.com/embed/QnBADW_B8GE?si=xIgNbwXGwoBmafdU",
         "https://www.youtube.com/embed/videoseries?si=aT1R69GxWWlaj3gQ&amp;list=PL8aY1TW4q-N76JJrIJreN_q36yF6WfZ6E"
     ],
     "Inglese": [
         //*TEMPI VERBALI
-        "https://www.youtube.com/embed/i1Wfrnyld-8?si=CD8nzXuJWIkynOZz",
-        "https://www.youtube.com/embed/7UByCdDk4X8?si=WBoN5g9ayrf1s-Vy",
-        "https://www.youtube.com/embed/Jc-9efRvssg?si=0SgAwDSrbh2uMLfc",
+        "https://www.youtube.com/embed/videoseries?si=T7dPqSI-wE5VyNeA&amp;list=PLWpZilv2DGmQlhLuN9emg7koEXtzNU13l",
+        "https://www.youtube.com/embed/videoseries?si=SEBYYYVmn6PmREV6&amp;list=PLWpZilv2DGmQucV1A2ymzSGlTPBa-6f8V",
+        "https://www.youtube.com/embed/videoseries?si=Wpg_NqceAUyFco9M&amp;list=PLmroRopOfeRoUQ-AV3CgorGCqTYj3bCbU",
+        "https://www.youtube.com/embed/MrsC3GCo9vs?si=qLIeFIV8VM5JvROl",
         //*Verbi irregolari
         "https://www.youtube.com/embed/iZFJwXepwOc?si=3ndr67QjEE-h5QkC",
     ],
@@ -38,30 +40,39 @@ const materie_card =
         "https://www.youtube.com/embed/videoseries?si=KBHlAo_2mIhI6QJx&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S"
     ],
     "Diritto": [
-        "https://www.youtube.com/embed/videoseries?si=It4mN0wq9cDna58Q&amp;list=PL49X9HJfW4kQKt0VnT9qC_NpwaJM3j3ob"
+        "https://www.youtube.com/embed/videoseries?si=It4mN0wq9cDna58Q&amp;list=PL49X9HJfW4kQKt0VnT9qC_NpwaJM3j3ob",
+        "https://www.youtube.com/embed/videoseries?si=u8gVhzuCQRvFxr8I&amp;list=PLFRYVVEHvMSw-GAfY5ZAN5VAxbRLBmd9j"
     ],
     "Tecnologia - disegno tecnico": [
         "https://www.youtube.com/embed/videoseries?si=LwAAOTrXWSfZeIMZ&amp;list=PLa_FM61U8MoTi3R3kf8uJUfpKqDCe7Gdv",
         "https://www.youtube.com/embed/videoseries?si=UjEga_OQR5wvmqpF&amp;list=PL2bgZ9Ap_Y3rgn1Z9c-vSqKNjhcFlRpOI"
     ],
     "Matematica": [
+        "https://www.youtube.com/embed/videoseries?si=zUZiN85OJFOmfxBy&amp;list=PL_VeUGLULXQtqmSpv46dMawrAkGys0ery",
         "https://www.youtube.com/embed/videoseries?si=zY1W-ocY5vNt6YKW&amp;list=PLpkXLf6Zhdx0LEJW8B4XYJPkXK4rue3th",
         "https://www.youtube.com/embed/videoseries?si=uwPFzzahYPh_WFej&amp;list=PLNMxMkuOUGw_s9ND_xYjcWCBo2QtWOfNS",
-
+        "https://www.youtube.com/embed/videoseries?si=bTqSEQ3HkTsjGjiE&amp;list=PLW4IfhQEjCpJ1wTOPG1sdEFe7pNyTNGun",
+        "https://www.youtube.com/embed/videoseries?si=cRjHLefZvwTgAzTB&amp;list=PL9SnRnlzoyX3kLYWUsrmrq0qy2Bye1JF4",
+    ],
+    "Elettronica - Informatica": [
+        "https://www.youtube.com/embed/videoseries?si=lr5YN9VlD0omdKiI&amp;list=PLUL1bzfXcbX1z4Hu_PqLmdqUtanoZrnJK",
+        "https://www.youtube.com/embed/videoseries?si=NdYXnPcDzR91Ftn9&amp;list=PLUL1bzfXcbX0JOiAS6LNds6Ub1BF4-Wom",
+        "https://www.youtube.com/embed/videoseries?si=-PhhG4G4Ev5593HP&amp;list=PLUL1bzfXcbX3g2cIcTFdmvj5yawQtUOxJ",
+        "https://www.youtube.com/embed/videoseries?si=HPoDT7XWOSxYFJGR&amp;list=PLUL1bzfXcbX3azd6fhdTTdZ-yVf9jmznh",
     ]
 }
 
-document.body.style.backgroundColor = "black" 
-document.body.style.color = "white" 
+document.body.style.backgroundColor = "black"
+document.body.style.color = "white"
 
 //& link con redirect
-const links_con_redirect= document.getElementsByTagName('div')[0]
+const links_con_redirect = document.getElementsByTagName('div')[0]
 Object.assign(links_con_redirect.style, {
     display: "flex",
     flexDirection: "column",
     width: "max-content"
 })
-for(const [k, v] of Object.entries(materie_con_redirect)){
+for (const [k, v] of Object.entries(materie_con_redirect)) {
     const a = document.createElement('a')
     a.textContent = k
     a.href = v
@@ -131,7 +142,7 @@ document.querySelectorAll('.card').forEach(e => {
 
         })
         btn.addEventListener('click', () => {
-            while (main_cardAperta.firstChild) { main_cardAperta.removeChild(main_cardAperta.firstChild)}
+            while (main_cardAperta.firstChild) { main_cardAperta.removeChild(main_cardAperta.firstChild) }
             main_card.style.display = "grid"
             main_cardAperta.style.display = "none"
 
@@ -147,6 +158,7 @@ document.querySelectorAll('.card').forEach(e => {
             case "Diritto": a_schermo(materie_card[e.textContent]); break
             case "Tecnologia - disegno tecnico": a_schermo(materie_card[e.textContent]); break
             case "Matematica": a_schermo(materie_card[e.textContent]); break
+            case "Elettronica - Informatica": a_schermo(materie_card[e.textContent]); break
         }
     })
 })

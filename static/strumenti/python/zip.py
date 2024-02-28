@@ -1,7 +1,10 @@
 import py7zr
 import sys
+import subprocess
 
-argomento = sys.argv[1]
+
+FILE = sys.argv[1]
+azione = sys.argv[2]
 path = "C:\\Users\\Utente\\Desktop\\info\\variabili"
 files = ["\\segreto.7z", "\\.env.7z"]
 
@@ -15,10 +18,26 @@ def estrai_file_7zip(file_archivio, password):
         print("Errore: File 7z danneggiato o password errata.")
         return False
     
+    
 with open(path+"\\prova.txt", "r") as f: password = f.read()
 for file in files:
-    if argomento == file: 
-        file_archivio = path+file
-        estrai_file_7zip(file_archivio, password)
-        break
+    fileEstratto = file[:-3]
+    print(fileEstratto)
+    estensione = ".txt" if fileEstratto == "\\segreto" else ""
+    fileEstratto+=estensione
+
+    print(azione)
+    print(fileEstratto)
+
+    if FILE == file:
+        if azione == "open": 
+            file_archivio = path+file
+            estrai_file_7zip(file_archivio, password)
+            break
+
+        elif azione == "delete": 
+            print("sono dentro")
+            subprocess.run(f"del {path}{fileEstratto}", shell=True)
+            print("Contenuto eliminato con successo.")
+            break
 
