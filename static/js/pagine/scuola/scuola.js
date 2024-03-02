@@ -5,6 +5,10 @@ const materie_con_redirect = {
     "analisi grammaticale": "https://youtube.com/playlist?list=PLdIQC7oepumhoYpBBYm2hQMywZYj4Iu8M&si=iOBSPci-i9hZxE1c",
     "analisi logica": "https://youtube.com/playlist?list=PLdIQC7oepumiphdQH4iYNqTQlHRwUiYk2&si=Fs8acdGcL6nkGv0I",
     "analisi del periodo": "https://youtube.com/playlist?list=PLdIQC7oepumjZ5_wDdCVlOR63YwnWjPlq&si=177w72RHggri4OcQ",
+    "Macchina di moore": "https://it.wikipedia.org/wiki/Macchina_di_Moore",
+    "Macchina di mealy": "https://it.wikipedia.org/wiki/Macchina_di_Mealy",
+    "Sitemi matematica": "https://youtu.be/rkwDJ2bh3uc?si=fqIskRrUFJdlvg1_",
+    "roma": "https://it.wikipedia.org/wiki/Roma#Et%C3%A0_antica",
     "APPUNTI": "http://127.0.0.1:8080/api.show"
 }
 
@@ -14,7 +18,9 @@ const materie_card = {
         "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
         "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x",
         "https://www.youtube.com/embed/videoseries?si=LqiTERf7RxOa8Fl2&amp;list=PLZCOAUvuJXW8LxZDhF1nCBdNliQiRu1WK",
-        "https://www.youtube.com/embed/xBaHMmo_f8U?si=FvVWNTQyMltcn43a"
+        "https://www.youtube.com/embed/xBaHMmo_f8U?si=FvVWNTQyMltcn43a",
+        "https://www.youtube.com/embed/videoseries?si=mU-UKWBPblyNL1Za&amp;list=PLFRYVVEHvMSym6f-VfHa_ZY93FPOM4mOD",
+        "https://www.youtube.com/embed/AknikZAwZWM?si=GEVNPHSai5Y--8Lt"
     ],
     "Geografia": [
         "https://www.youtube.com/embed/videoseries?si=EnuRP2ifOlber2eG&amp;list=PLsLBNKs3-0324idL6TOSvYNVRr6V7R1H7"
@@ -53,12 +59,16 @@ const materie_card = {
         "https://www.youtube.com/embed/videoseries?si=uwPFzzahYPh_WFej&amp;list=PLNMxMkuOUGw_s9ND_xYjcWCBo2QtWOfNS",
         "https://www.youtube.com/embed/videoseries?si=bTqSEQ3HkTsjGjiE&amp;list=PLW4IfhQEjCpJ1wTOPG1sdEFe7pNyTNGun",
         "https://www.youtube.com/embed/videoseries?si=cRjHLefZvwTgAzTB&amp;list=PL9SnRnlzoyX3kLYWUsrmrq0qy2Bye1JF4",
+        "https://www.youtube.com/embed/dgt0xiKIL9I?si=TTG_Ww2yDEinKGYH",
+        "https://www.youtube.com/embed/6w-7j__jDlQ?si=bBJia7mfhRRdi33y"
     ],
     "Elettronica - Informatica": [
         "https://www.youtube.com/embed/videoseries?si=lr5YN9VlD0omdKiI&amp;list=PLUL1bzfXcbX1z4Hu_PqLmdqUtanoZrnJK",
         "https://www.youtube.com/embed/videoseries?si=NdYXnPcDzR91Ftn9&amp;list=PLUL1bzfXcbX0JOiAS6LNds6Ub1BF4-Wom",
         "https://www.youtube.com/embed/videoseries?si=-PhhG4G4Ev5593HP&amp;list=PLUL1bzfXcbX3g2cIcTFdmvj5yawQtUOxJ",
         "https://www.youtube.com/embed/videoseries?si=HPoDT7XWOSxYFJGR&amp;list=PLUL1bzfXcbX3azd6fhdTTdZ-yVf9jmznh",
+        "https://www.youtube.com/embed/videoseries?si=bdpS31W_jTMlUv6e&amp;list=PLGdvBRo2X3hbDRysMfvkT6o1sMa4fGxV9",
+        "https://www.youtube.com/embed/videoseries?si=aJECKR1HwXPfvTWA&amp;list=PLWcRoC6GCxLjDZNwJManBD_9P-pOJZHnm"
     ]
 }
 
