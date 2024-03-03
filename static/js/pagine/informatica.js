@@ -15,6 +15,10 @@ function creazioneTabella(N_tabelle, N_sottocampi, sottotitoli, linksData) {
             inizioID = "livello2___"
             title = "MEMORIE"
             break
+        case '#Reti___Area_Network':
+            inizioID = "Reti___"
+            title = "RETI"
+            break
     }
 
     const divLink = document.createElement('div')
@@ -34,6 +38,7 @@ function creazioneTabella(N_tabelle, N_sottocampi, sottotitoli, linksData) {
                 ? td.textContent = sottotitoli[i]
                 : td.setAttribute("id", inizioID + sottotitoli[i].replace(/\s/g, ''))
             td.style.border = ".5px solid white"
+            td.style.padding = "5px"
             tr.append(td)
         }
         table.append(tr)
@@ -63,19 +68,19 @@ function creazioneTabellaVideo(data) {
     //&#9733 -> stella piena
     //&#9734 -> stella vuota
     let difficolta = null
-    switch(data.titolo){
-        case "Programmazione in parallelo": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9734";break
-        case "Blockchain": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9733";break
-        case "Algoritmi": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9734";break
+    switch (data.titolo) {
+        case "Programmazione in parallelo": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9734"; break
+        case "Blockchain": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9733"; break
+        case "Algoritmi": difficolta = "&#9733;&#9733;&#9733;&#9733;&#9734"; break
     }
 
     const h2 = document.createElement('h2')
     h2.textContent = data.titolo
-    const div = document.createElement('div')
+    //const div = document.createElement('div')
 
     const div2 = document.createElement('div')
     const p0 = document.createElement('p')
-    p0.textContent = "Segnavideo "+data.segnavideo
+    p0.textContent = "Segnavideo " + data.segnavideo
 
     const p1 = document.createElement('p')
     p1.textContent = "Difficolta: "
@@ -193,6 +198,32 @@ const LIVELLO2 = [
 ]
 const sottotitoli_LIVELLO2 = ["CPU", "SDRAM"]
 creazioneTabella(2, 2, sottotitoli_LIVELLO2, LIVELLO2)
+
+
+const RETI = [
+    {
+        ID: "#Reti___Area_Network", links: {
+            "PAN": "https://it.wikipedia.org/wiki/Personal_Area_Network",
+            "BAN": "https://it.wikipedia.org/wiki/Body_area_network",
+            "LAN": "https://it.wikipedia.org/wiki/Local_area_network",
+            "WAN": "https://it.wikipedia.org/wiki/Wide_Area_Network",
+        }
+    },
+    {
+        ID: "#Reti___altro", links: {
+            "STP": "https://it.wikipedia.org/wiki/Spanning_tree_(networking)",
+            "FDM_TDM": "https://vitolavecchia.altervista.org/caratteristiche-e-differenza-tra-fdm-e-tdm-in-telecomunicazioni/",
+            "ASIC": "https://it.wikipedia.org/wiki/Application_specific_integrated_circuit",
+            "GateARRAY": "https://it.wikipedia.org/wiki/Gate_array",
+            "PLD": "https://it.wikipedia.org/wiki/Programmable_Logic_Device",
+            "CPLD": "https://it.wikipedia.org/wiki/Complex_Programmable_Logic_Device",
+            "FPGA": "https://it.wikipedia.org/wiki/Field_Programmable_Gate_Array",
+            "AO": "https://it.wikipedia.org/wiki/Amplificatore_operazionale"
+        }
+    }
+]
+const sottotitoli_RETI = ["Area_Network", "altro"]
+creazioneTabella(2, 2, sottotitoli_RETI, RETI)
 
 
 
