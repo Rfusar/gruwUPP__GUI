@@ -3,6 +3,7 @@ const materie_card = {
     Storia: {
         "link": {
             "roma": "https://it.wikipedia.org/wiki/Roma#Et%C3%A0_antica",
+            "storia_generale": "https://it.wikipedia.org/wiki/Storia#Storia_medievale"
         },
         "video": [
             "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
@@ -25,6 +26,8 @@ const materie_card = {
             "analisi grammaticale": "https://youtube.com/playlist?list=PLdIQC7oepumhoYpBBYm2hQMywZYj4Iu8M&si=iOBSPci-i9hZxE1c",
             "analisi logica": "https://youtube.com/playlist?list=PLdIQC7oepumiphdQH4iYNqTQlHRwUiYk2&si=Fs8acdGcL6nkGv0I",
             "analisi del periodo": "https://youtube.com/playlist?list=PLdIQC7oepumjZ5_wDdCVlOR63YwnWjPlq&si=177w72RHggri4OcQ",
+            "letteratura medievale": "https://it.wikipedia.org/wiki/Letteratura_medievale",
+            "ciclo carolingio": "https://it.wikipedia.org/wiki/Ciclo_carolingio",
         },
         "video": [
             "https://www.youtube.com/embed/yv1Az2vsHLk?si=jKohWxRnbgbxTe1t",
@@ -60,7 +63,8 @@ const materie_card = {
     Chimica: {
         "link": {},
         "video": [
-            "https://www.youtube.com/embed/videoseries?si=KBHlAo_2mIhI6QJx&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S"
+            "https://www.youtube.com/embed/videoseries?si=KBHlAo_2mIhI6QJx&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S",
+            "https://www.youtube.com/embed/LWS6JeWUPuY?si=XbjSeXJuMNGvLZpu"
         ]
     },
     Diritto: {
@@ -93,7 +97,10 @@ const materie_card = {
             "https://www.youtube.com/embed/6w-7j__jDlQ?si=bBJia7mfhRRdi33y",
             "https://www.youtube.com/embed/videoseries?si=peWnoykWdOoN1yi0&amp;list=PLpkXLf6Zhdx0qzXCCJe4EaHu-eS-k4n3C",
             "https://www.youtube.com/embed/videoseries?si=O-H6r4eX-HN09S3X&amp;list=PLpkXLf6Zhdx2wD-sNnKnXF9ioqNLz3EnH",
-            "https://www.youtube.com/embed/videoseries?si=tqngh-7VUI7Rvzds&amp;list=PLA3C7C80841C5C018"
+            "https://www.youtube.com/embed/videoseries?si=tqngh-7VUI7Rvzds&amp;list=PLA3C7C80841C5C018",
+            "https://www.youtube.com/embed/videoseries?si=F5zTTLZKSiBC4CrI&amp;list=PLNMxMkuOUGw_-qzwt4jWP4ZSHC15FzC7V",
+            "https://www.youtube.com/embed/m01wQ57wKoc?si=qokTkIINuHNcXe7G",
+            "https://www.youtube.com/embed/videoseries?si=BY9gyV_wlK8HBbEi&amp;list=PL84856B5CABD988D1", 
         ]
     },
     Elettronica_Informatica: {
@@ -101,10 +108,18 @@ const materie_card = {
             "DIODO": "https://it.wikipedia.org/wiki/Diodo",
             "ANODO": "https://it.wikipedia.org/wiki/Anodo",
             "CATADO": "https://it.wikipedia.org/wiki/Catodo",
+            "legge di ohm": "https://it.wikipedia.org/wiki/Legge_di_Ohm",
 
             "Macchina di moore": "https://it.wikipedia.org/wiki/Macchina_di_Moore",
             "Macchina di mealy": "https://it.wikipedia.org/wiki/Macchina_di_Mealy",
-            "Diagramma di evans": "https://it.wikipedia.org/wiki/Diagramma_di_Evans"
+            "Diagramma di evans": "https://it.wikipedia.org/wiki/Diagramma_di_Evans",
+            "commutazione di circuito": "https://en.wikipedia.org/wiki/Circuit_switching",
+            "commutazione di messaggio": "https://it.wikipedia.org/wiki/Commutazione_di_pacchetto",
+            "ATM": "https://it.wikipedia.org/wiki/Asynchronous_Transfer_Mode",
+            "token ring": "https://it.wikipedia.org/wiki/Token_ring",
+            "Z80": "https://it.wikipedia.org/wiki/Zilog_Z80",
+            "oscilloscopio": "https://it.wikipedia.org/wiki/Oscilloscopio",
+            "deflessione": "https://it.wikipedia.org/wiki/Deflessione_(fisica)"
         },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=lr5YN9VlD0omdKiI&amp;list=PLUL1bzfXcbX1z4Hu_PqLmdqUtanoZrnJK",
@@ -201,6 +216,12 @@ document.querySelectorAll('.card').forEach(e => {
 
         for (const materia of Object.keys(materie_card)) {
             if (e.textContent == materia) {
+
+                if (e.textContent == "Chimica"){
+                    const img = document.createElement('img')
+                    img.src = "https://www.laforgia.xyz/tavola-periodica/tp4x3.png"
+                    main_cardAperta.append(img)
+                }
                 a_schermo(
                     materie_card[e.textContent]['video'],
                     materie_card[e.textContent]['link']
