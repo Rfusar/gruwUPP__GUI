@@ -3,11 +3,14 @@ const materie_card = {
     Storia: {
         "link": {
             "roma": "https://it.wikipedia.org/wiki/Roma#Et%C3%A0_antica",
-            "storia_generale": "https://it.wikipedia.org/wiki/Storia#Storia_medievale"
+            "feudalesimo": "https://it.wikipedia.org/wiki/Feudalesimo",
+            "storia_generale": "https://it.wikipedia.org/wiki/Storia#Storia_medievale",
+            "macedonia": "https://youtu.be/cPuBkewehIM?si=I3y6i8Etzbx_A-qr"
         },
         "video": [
             "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
             "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x",
+            "https://www.youtube.com/embed/hu6vc7BNM7I?si=ugWAzwfe9eS8tpuM",
             "https://www.youtube.com/embed/videoseries?si=LqiTERf7RxOa8Fl2&amp;list=PLZCOAUvuJXW8LxZDhF1nCBdNliQiRu1WK",
             "https://www.youtube.com/embed/xBaHMmo_f8U?si=FvVWNTQyMltcn43a",
             "https://www.youtube.com/embed/videoseries?si=mU-UKWBPblyNL1Za&amp;list=PLFRYVVEHvMSym6f-VfHa_ZY93FPOM4mOD",
@@ -32,7 +35,9 @@ const materie_card = {
         "video": [
             "https://www.youtube.com/embed/yv1Az2vsHLk?si=jKohWxRnbgbxTe1t",
             "https://www.youtube.com/embed/QnBADW_B8GE?si=xIgNbwXGwoBmafdU",
-            "https://www.youtube.com/embed/videoseries?si=aT1R69GxWWlaj3gQ&amp;list=PL8aY1TW4q-N76JJrIJreN_q36yF6WfZ6E"
+            "https://www.youtube.com/embed/videoseries?si=aT1R69GxWWlaj3gQ&amp;list=PL8aY1TW4q-N76JJrIJreN_q36yF6WfZ6E",
+            "https://www.youtube.com/embed/QUFc0Hg4y2M?si=i5p_KiBktfelmAHu",
+            "https://www.youtube.com/embed/videoseries?si=-nZHXXb0fR1nw3Ck&amp;list=PLz8XOyNIOJkPpFQWguBaIz79nohEIc69I",
         ]
     },
     Inglese: {
@@ -119,7 +124,8 @@ const materie_card = {
             "token ring": "https://it.wikipedia.org/wiki/Token_ring",
             "Z80": "https://it.wikipedia.org/wiki/Zilog_Z80",
             "oscilloscopio": "https://it.wikipedia.org/wiki/Oscilloscopio",
-            "deflessione": "https://it.wikipedia.org/wiki/Deflessione_(fisica)"
+            "deflessione": "https://it.wikipedia.org/wiki/Deflessione_(fisica)",
+            "bande ISM": "https://it.wikipedia.org/wiki/Banda_ISM"
         },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=lr5YN9VlD0omdKiI&amp;list=PLUL1bzfXcbX1z4Hu_PqLmdqUtanoZrnJK",
