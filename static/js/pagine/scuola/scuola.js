@@ -5,7 +5,8 @@ const materie_card = {
             "roma": "https://it.wikipedia.org/wiki/Roma#Et%C3%A0_antica",
             "feudalesimo": "https://it.wikipedia.org/wiki/Feudalesimo",
             "storia_generale": "https://it.wikipedia.org/wiki/Storia#Storia_medievale",
-            "macedonia": "https://youtu.be/cPuBkewehIM?si=I3y6i8Etzbx_A-qr"
+            "macedonia": "https://youtu.be/cPuBkewehIM?si=I3y6i8Etzbx_A-qr",
+            "medioevo": "https://it.wikipedia.org/wiki/Medioevo",
         },
         "video": [
             "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
@@ -15,7 +16,8 @@ const materie_card = {
             "https://www.youtube.com/embed/xBaHMmo_f8U?si=FvVWNTQyMltcn43a",
             "https://www.youtube.com/embed/videoseries?si=mU-UKWBPblyNL1Za&amp;list=PLFRYVVEHvMSym6f-VfHa_ZY93FPOM4mOD",
             "https://www.youtube.com/embed/AknikZAwZWM?si=GEVNPHSai5Y--8Lt",
-            "https://www.youtube.com/embed/NxFzQEEbRf8?si=EifJatQfat165Ci6"
+            "https://www.youtube.com/embed/NxFzQEEbRf8?si=EifJatQfat165Ci6",
+            "https://www.youtube.com/embed/G2Q3wM0dK_U?si=ilqZy2mcW1IENELE"
         ]
     },
     Geografia: {
@@ -66,14 +68,21 @@ const materie_card = {
         ]
     },
     Chimica: {
-        "link": {},
+        "link": {
+            "termocoppia": "https://it.wikipedia.org/wiki/Termocoppia",
+            "manometro": "https://it.wikipedia.org/wiki/Manometro"
+        },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=KBHlAo_2mIhI6QJx&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S",
-            "https://www.youtube.com/embed/LWS6JeWUPuY?si=XbjSeXJuMNGvLZpu"
+            "https://www.youtube.com/embed/LWS6JeWUPuY?si=XbjSeXJuMNGvLZpu",
+            "https://www.youtube.com/embed/videoseries?si=7ij59HgtBrfTNiJ8&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S"
         ]
     },
     Diritto: {
-        "link": {},
+        "link": {
+            "stato di diritto": "https://it.wikipedia.org/wiki/Stato_di_diritto",
+            "stato sociale": "https://it.wikipedia.org/wiki/Stato_sociale"
+        },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=It4mN0wq9cDna58Q&amp;list=PL49X9HJfW4kQKt0VnT9qC_NpwaJM3j3ob",
             "https://www.youtube.com/embed/videoseries?si=u8gVhzuCQRvFxr8I&amp;list=PLFRYVVEHvMSw-GAfY5ZAN5VAxbRLBmd9j"
@@ -128,6 +137,7 @@ const materie_card = {
             "bande ISM": "https://it.wikipedia.org/wiki/Banda_ISM"
         },
         "video": [
+            "https://www.youtube.com/embed/videoseries?si=7DLpOR4jocx9YKsf&amp;list=PLkOW1cfBrnacsfgqbPyq_WFZitKGCydKa",
             "https://www.youtube.com/embed/videoseries?si=lr5YN9VlD0omdKiI&amp;list=PLUL1bzfXcbX1z4Hu_PqLmdqUtanoZrnJK",
             "https://www.youtube.com/embed/videoseries?si=NdYXnPcDzR91Ftn9&amp;list=PLUL1bzfXcbX0JOiAS6LNds6Ub1BF4-Wom",
             "https://www.youtube.com/embed/videoseries?si=-PhhG4G4Ev5593HP&amp;list=PLUL1bzfXcbX3g2cIcTFdmvj5yawQtUOxJ",
