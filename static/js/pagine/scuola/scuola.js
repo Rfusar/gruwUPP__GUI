@@ -7,8 +7,10 @@ const materie_card = {
             "storia_generale": "https://it.wikipedia.org/wiki/Storia#Storia_medievale",
             "macedonia": "https://youtu.be/cPuBkewehIM?si=I3y6i8Etzbx_A-qr",
             "medioevo": "https://it.wikipedia.org/wiki/Medioevo",
+            "crociate_audio": "https://youtu.be/OpZ2NZs85m0?si=FSiF2atdO76k0VaF"
         },
         "video": [
+            "https://www.youtube.com/embed/videoseries?si=2ht_1aBrSiIp_8SY&amp;list=PL51ebLw2tEzWRoOmAbY11VPe8YlfKm1Dy",
             "https://www.youtube.com/embed/2pf1u-JnAOs?si=pgWBk3Y07ri_gHwO",
             "https://www.youtube.com/embed/d3oSdC6OCMo?si=QvjtrnPNzoHFxc5x",
             "https://www.youtube.com/embed/hu6vc7BNM7I?si=ugWAzwfe9eS8tpuM",
@@ -31,6 +33,9 @@ const materie_card = {
             "analisi grammaticale": "https://youtube.com/playlist?list=PLdIQC7oepumhoYpBBYm2hQMywZYj4Iu8M&si=iOBSPci-i9hZxE1c",
             "analisi logica": "https://youtube.com/playlist?list=PLdIQC7oepumiphdQH4iYNqTQlHRwUiYk2&si=Fs8acdGcL6nkGv0I",
             "analisi del periodo": "https://youtube.com/playlist?list=PLdIQC7oepumjZ5_wDdCVlOR63YwnWjPlq&si=177w72RHggri4OcQ",
+            "Dante Alighieri": "https://it.wikipedia.org/wiki/Dante_Alighieri",
+            "Francesco Petrarca": "https://it.wikipedia.org/wiki/Francesco_Petrarca",
+            "Giovanni Boccaccio": "https://it.wikipedia.org/wiki/Giovanni_Boccaccio",
             "letteratura medievale": "https://it.wikipedia.org/wiki/Letteratura_medievale",
             "ciclo carolingio": "https://it.wikipedia.org/wiki/Ciclo_carolingio",
         },
@@ -40,11 +45,13 @@ const materie_card = {
             "https://www.youtube.com/embed/videoseries?si=aT1R69GxWWlaj3gQ&amp;list=PL8aY1TW4q-N76JJrIJreN_q36yF6WfZ6E",
             "https://www.youtube.com/embed/QUFc0Hg4y2M?si=i5p_KiBktfelmAHu",
             "https://www.youtube.com/embed/videoseries?si=-nZHXXb0fR1nw3Ck&amp;list=PLz8XOyNIOJkPpFQWguBaIz79nohEIc69I",
+            "https://www.youtube.com/embed/videoseries?si=FnIjim2OQytaIWvp&amp;list=PLlp5giICUffC7U0j_lmdTaWfjzaT-04pY"
         ]
     },
     Inglese: {
         "link": {
             "verbi_irregolari": "https://verbi-irregolari-inglese.it/",
+            "JForrest": "https://www.youtube.com/@JForrestEnglish",
             "Esercizi": "https://www.esercizinglese.com/",
         },
         "video": [
@@ -70,12 +77,13 @@ const materie_card = {
     Chimica: {
         "link": {
             "termocoppia": "https://it.wikipedia.org/wiki/Termocoppia",
-            "manometro": "https://it.wikipedia.org/wiki/Manometro"
+            "manometro": "https://it.wikipedia.org/wiki/Manometro",
+            "corso Nettuno": "https://youtube.com/playlist?list=PLlp5giICUffDxiS21oW9S4wgN7Wkowv-N&si=DV4kq-UYM-pUbUSt",
+            "stepByStep": "https://www.youtube.com/@StepbyStepFisica"
         },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=KBHlAo_2mIhI6QJx&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S",
-            "https://www.youtube.com/embed/LWS6JeWUPuY?si=XbjSeXJuMNGvLZpu",
-            "https://www.youtube.com/embed/videoseries?si=7ij59HgtBrfTNiJ8&amp;list=PL4Aufc8fZ9h8zU6xsJlucILWvSTfiau4S"
+            "https://www.youtube.com/embed/videoseries?si=CQloRKIqJdHgxCf6&amp;list=PLUL1bzfXcbX3Pu4bzCQFlRTAAqO3wdpHu"
         ]
     },
     Diritto: {
@@ -99,22 +107,18 @@ const materie_card = {
     },
     Matematica: {
         "link": {
-            "Sistemi matematica": "https://youtu.be/rkwDJ2bh3uc?si=fqIskRrUFJdlvg1_",
-            "Esercizi": "https://www.youmath.it/esercizi/es-algebra-elementare.html",
+            "Federico Sangalli": "https://www.youtube.com/@FexMathFedericoSangalli/playlists",
+            "Elia Bombardelli": "https://www.youtube.com/@EliaBombardelli/playlists",
+            "Salvo Romeo": "https://www.youtube.com/@salvoromeo/playlists",
+            "Roberto Tauraso": "https://www.youtube.com/@robtau65/playlists",
+            "La fisica che ci piace": "https://www.youtube.com/@LaFisicaCheCiPiace/playlists",
+            "MateFacil": "https://www.youtube.com/@MateFacilYT/playlists"
         },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=zUZiN85OJFOmfxBy&amp;list=PL_VeUGLULXQtqmSpv46dMawrAkGys0ery",
-            "https://www.youtube.com/embed/videoseries?si=zY1W-ocY5vNt6YKW&amp;list=PLpkXLf6Zhdx0LEJW8B4XYJPkXK4rue3th",
-            "https://www.youtube.com/embed/videoseries?si=bTqSEQ3HkTsjGjiE&amp;list=PLW4IfhQEjCpJ1wTOPG1sdEFe7pNyTNGun",
             "https://www.youtube.com/embed/videoseries?si=cRjHLefZvwTgAzTB&amp;list=PL9SnRnlzoyX3kLYWUsrmrq0qy2Bye1JF4",
             "https://www.youtube.com/embed/dgt0xiKIL9I?si=TTG_Ww2yDEinKGYH",
             "https://www.youtube.com/embed/6w-7j__jDlQ?si=bBJia7mfhRRdi33y",
-            "https://www.youtube.com/embed/videoseries?si=peWnoykWdOoN1yi0&amp;list=PLpkXLf6Zhdx0qzXCCJe4EaHu-eS-k4n3C",
-            "https://www.youtube.com/embed/videoseries?si=O-H6r4eX-HN09S3X&amp;list=PLpkXLf6Zhdx2wD-sNnKnXF9ioqNLz3EnH",
-            "https://www.youtube.com/embed/videoseries?si=tqngh-7VUI7Rvzds&amp;list=PLA3C7C80841C5C018",
-            "https://www.youtube.com/embed/videoseries?si=F5zTTLZKSiBC4CrI&amp;list=PLNMxMkuOUGw_-qzwt4jWP4ZSHC15FzC7V",
-            "https://www.youtube.com/embed/m01wQ57wKoc?si=qokTkIINuHNcXe7G",
-            "https://www.youtube.com/embed/videoseries?si=BY9gyV_wlK8HBbEi&amp;list=PL84856B5CABD988D1", 
         ]
     },
     Elettronica_Informatica: {
@@ -134,7 +138,8 @@ const materie_card = {
             "Z80": "https://it.wikipedia.org/wiki/Zilog_Z80",
             "oscilloscopio": "https://it.wikipedia.org/wiki/Oscilloscopio",
             "deflessione": "https://it.wikipedia.org/wiki/Deflessione_(fisica)",
-            "bande ISM": "https://it.wikipedia.org/wiki/Banda_ISM"
+            "bande ISM": "https://it.wikipedia.org/wiki/Banda_ISM",
+            "OS": "https://it.wikipedia.org/wiki/Sistema_operativo",
         },
         "video": [
             "https://www.youtube.com/embed/videoseries?si=7DLpOR4jocx9YKsf&amp;list=PLkOW1cfBrnacsfgqbPyq_WFZitKGCydKa",
